@@ -1,0 +1,20 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/buildpack-deps:buster
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build Docker image
+          command: DOCKER_BUILDKIT=1 docker build --output . .
+      - store_artifacts:
+          path: cv.pdf
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build:
+          context: docker
