@@ -4,13 +4,16 @@
 \usepackage{fancyhdr}
 \usepackage[pdfborder={0 0 0}]{hyperref}
 \usepackage{verbatim}
+\usepackage[compact]{titlesec}
 
 \setlength{\headheight}{12pt}
 \pagestyle{fancy}
 \rfoot{\url{http://lukeblaney.co.uk/cv}}
 \cfoot{}
 \renewcommand{\headrulewidth}{0.0pt}
-\renewcommand{\footrulewidth}{0.0pt}  
+\renewcommand{\footrulewidth}{0.0pt}
+\titleformat{\subsection}
+{\normalsize\bfseries}{\thesubsection}{1em}{}
 \begin{document}
 
 \begin{center}\textsc{\LARGE Luke Blaney BSc (Hons)}\end{center}
@@ -27,40 +30,32 @@ Email Address: & \href{mailto:cv@lukeblaney.co.uk}{cv@lukeblaney.co.uk}\\
 \begin{itemize}
 
 \item Financial Times: February 2018 - Present
-\begin{itemize}\item
- {\bf Principal Engineer - Relability Engineering}\\
+\subsection*{Principal Engineer - Relability Engineering}
 Setting up and leading a new team working to improve reliability of systems and reduce duplication of effort across technology teams at the FT.
-\end{itemize}
+
 
 \item Financial Times: October 2016 - February 2018
-\begin{itemize}\item
- {\bf Lead Architect - Content}\\
+\subsection*{Lead Architect - Content}
 Working on our Universal Publishing Platform, delivering Content \& Metadata from a range of editorial tools to our websites, apps and third-party B2B clients. In this role, I was responsible for architectural decisions across a whole programme of work (6 development teams working in 2 countries). I worked closely with product owners, editorial stakeholders and developers in other teams who interact with our platform.\par
 
 From January 2017 onwards, I took on line management responsibilities.
-\end{itemize}
+
 
 \item Financial Times: December 2015 - October 2016
-\begin{itemize}\item
- {\bf Platform Architect - Operational Intelligence}\\
+\subsection*{Platform Architect - Operational Intelligence}
 I was technical lead on a team looking after monitoring, metrics \& log aggregation tools. I architected a new API-driven system for keeping track of our systems with automated runbook creation and monitoring management.  My role was a mixture of system design and development - much of my development work focused on the front-end to cover a skills gap within the team.  I was also heavily involved in the recruitment of new developers.
-\end{itemize}
 
 \item Financial Times: January 2015 - November 2015
-\begin{itemize}
-
-\item {\bf Integration Engineer - Strategic Products} \\
+\subsection*{Integration Engineer - Strategic Products}
 Worked on the migration of various systems to cloud-based infrastructure (primarily AWS) to facilitate the switch-off of physical kit in our datacentres.  I led the migration of all the infrastructure used by the FT's mobile web app to AWS, which involved lots of Puppet code and the recruitment of a contractor to assist in the project. As part of this I architected and built a deployment mechanism using varnish, nodejs and puppetdb, which allowed for zero-downtime promotion of different versions of code running in parallel on groups of EC2 nodes. 
 
 \small{\texttt{[Note: Officially, my job title did not change for this period. Included separately for clarity.]}}
-\end{itemize}
 
 \item Financial Times: December 2011 - December 2014
-\begin{itemize}
-\item {\bf Labs Developer - FT Labs}\\
+\subsection*{Labs Developer - FT Labs}
 In this role, I gained experience with the full stack of web development technologies, from using bleeding-edge browser features in the FT's HTML5 Web App, through to server mangement and configuration using tools like Puppet, Varnish and Apache.
 
-\subsection*{Key projects}
+\subsubsection*{Key projects}
 \begin{itemize}
 \item Worked on the original incarnation of FastFT, a realtime news service.  This included a customer-facing frontend, an API and bespoke CMS for editorial users.
 
@@ -69,14 +64,11 @@ In this role, I gained experience with the full stack of web development technol
 \item Following a cyber attack in 2013, I architected, helped engineer and cordinated roll-out of a tool to put multifactor authentication in front of all of the FT's staff-facing tools.
 \end{itemize}
 
-\end{itemize}
 
 \item Assanka: November 2010 - December 2011
-\begin{itemize}
-\item {\bf Web Developer}\\
+\subsection*{Web Developer}
 Worked on various web projects for a range of clients, doing both backend and frontend work. Backends included Wordpress, an in-house framework and vanilla PHP. Frontend javascript varied from simple jQuery-based interfaces, to large object-orientated systems which utilised many HTML5 features.
 Assanka was acquired by the Financial Times at the end of 2011 and was later rebranded ``FT Labs".
-\end{itemize}
 
 \end{itemize}
 
@@ -100,14 +92,13 @@ Spoke about the consolidation of our caching and routing logic across environmen
 \section*{Education}
 \begin{itemize}
 
-\item Edinburgh University: 2006 - 2010 \begin{itemize}\item {\bf BSc (Hons) Computer Science and Physics}\\
+\item Edinburgh University: 2006 - 2010 \subsection*{BSc (Hons) Computer Science and Physics}
 A joint degree, with an emphasis on Computer Science, covering specialist areas such as Distributed Systems, Multi-Agent Semantic Web Systems, Computer Security and Communication \& Networking.
 My Honours project used Semantic Web technologies to provide data for a Semi-Automatic Guesstimation system.
-\subsection*{Publications}
+\subsubsection*{Publications}
 \em A Single-Significant-Digit Calculus for Semi-Automated Guesstimation \em\\
 Jonathan Abourbih, {\bf Luke Blaney}, Alan Bundy and Fiona McNeill\\
 IJCAR 2010
-\end{itemize}
 
 \item Lagan College, Belfast: 1999 - 2006
 \begin{itemize}\item {\bf A-levels}: Maths (A), Irish (A), Physics (B), Chemistry (C)
