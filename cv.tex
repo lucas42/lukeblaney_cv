@@ -4,7 +4,8 @@
 \usepackage{fancyhdr}
 \usepackage[pdfborder={0 0 0}]{hyperref}
 \usepackage{verbatim}
-\usepackage[compact]{titlesec}
+\usepackage{titlesec}
+\usepackage{changepage}
 
 \setlength{\headheight}{12pt}
 \pagestyle{fancy}
@@ -14,6 +15,8 @@
 \renewcommand{\footrulewidth}{0.0pt}
 \titleformat{\subsection}
 {\normalsize\bfseries}{\thesubsection}{1em}{}
+\titlespacing\subsection{0pt}{0pt}{0pt}
+\newenvironment{detail}{\begin{adjustwidth}{10pt}{}}{\end{adjustwidth}}
 \begin{document}
 
 \begin{center}\textsc{\LARGE Luke Blaney BSc (Hons)}\end{center}
@@ -31,7 +34,8 @@ Email Address: & \href{mailto:cv@lukeblaney.co.uk}{cv@lukeblaney.co.uk}\\
 
 \item Financial Times: February 2018 - Present
 \subsection*{Principal Engineer - Reliability Engineering}
-Reliability Engineering was a new team set up to improve reliability of systems and reduce duplication of effort across technology teams at the FT.
+\begin{detail}
+Running a new team, set up to improve reliability of systems and reduce duplication of effort across technology teams at the FT.
 
 \begin{itemize}
 	\item Formed a brand new team whose members had backgrounds in a variety of different domains.
@@ -43,24 +47,28 @@ Reliability Engineering was a new team set up to improve reliability of systems 
 	\item Worked with engineering teams throughout the department to build a clearer understanding of our estate (including bespoke software, enterprise systems and SaaS solutions)
 	\item Liased with procurement team for all suppliers under our cost centre.  Handled renewals, ad-hoc licence increases and taking new contracts through the full procurement process.
 \end{itemize}
+\end{detail}
 
 \item Financial Times: October 2016 - February 2018
 \subsection*{Architect - Content}
+\begin{detail}
 Worked on our Universal Publishing Platform, which delivers Content \& Metadata from a range of editorial tools to our websites, apps and third-party B2B clients.
 
 \begin{itemize}
 	\item Responsible for architectural decisions across a whole programme of work (6 development teams working in 2 countries)
-	\item Collaborated with the Editorial Technology team to design and build TagMe - a tool to allow the newsroom manage metadata.
+	\item Collaborated with the Editorial Technology team to design and build TagMe - a tool enabling metadata management in the newsroom.
 	\item Worked closely with stakeholders in Editorial and B2B departments, as well as developers using the APIs our platform provided.
 	\item Successfully repositioned our relationship with an existing supplier so they'd take on operational responsibility for the software they were building.  (Also carried out technical due diligence on the new arrangement.)
 	\item Devised a framework for tracking progress on a multi-year project to decommission a suite of legacy software, in a way that made sense to both delivery managers and engineers.
 	\item Took on line management responsilities for integration engineers in our team.
 \end{itemize}
 I think my proudest accomplishment here was transforming a team heavily reliant on having an architect to one where engineers felt empowered to make their own architectural decisons.
+\end{detail}
 
 
 \item Financial Times: December 2015 - October 2016
 \subsection*{Platform Architect - Operational Intelligence}
+\begin{detail}
 Technical lead on a team responsible for observability tools used across the department (covering monitoring, metrics \& log aggregation).  We also introduced a new system for keeping track of the FT's technical estate, which provided automated runbook creation and monitoring management.  My role included:
 \begin{itemize}
 	\item System design, development and backlog prioritisation
@@ -69,32 +77,40 @@ Technical lead on a team responsible for observability tools used across the dep
 	\item Recruitment of junior developers
 	\item Working with teams across the FT and third-party suppliers
 \end{itemize}
+\end{detail}
 
+\pagebreak
 \item Financial Times: January 2015 - November 2015
 \subsection*{Integration Engineer - Strategic Products}
+\begin{detail}
 Led the migration of the FT's mobile apps to cloud-based infrastructure (primarily AWS) to facilitate the switch-off of physical kit in our datacentres.  This involved:
 \begin{itemize}
-\item Adpating existing workloads to run on cloud
-\item Recruitment of a contractor to assist with the project
-\item Architecting \& development of a cloud-native zero-downtime deployment pipeline
+	\item Adpating existing workloads to run on cloud
+	\item Recruitment of a contractor to assist with the project
+	\item Architecting \& development of a cloud-native zero-downtime deployment pipeline
 \end{itemize}
+\end{detail}
 
 \small{\texttt{[Note: Officially, my job title did not change for this period. Included separately for clarity.]}}
 
 \item Financial Times: December 2011 - December 2014
 \subsection*{Labs Developer - FT Labs}
+\begin{detail}
 In this role, I gained experience with the full stack of web development technologies, from using bleeding-edge browser features in the FT's HTML5 Web App, through to server mangement and configuration using tools like Puppet, Varnish and Apache.
 \begin{itemize}
-\item Worked on the original incarnation of FastFT, a realtime news service.  This included a customer-facing frontend, an API and bespoke CMS for editorial users.
-\item Led FT Labs' internal tooling workstream, which focused on infrastructure improvements and developer experience (including deployment, live error collection and monitoring aggregation).  My role involved engineering, architectural decisions and co-ordinating the work of others in this area.
-\item Following a cyber attack in 2013, I architected, helped engineer and cordinated roll-out of a tool to put multifactor authentication in front of all of the FT's staff-facing tools.
+	\item Worked on the original incarnation of FastFT, a realtime news service.  This included a customer-facing frontend, an API and bespoke CMS for editorial users.
+	\item Led FT Labs' internal tooling workstream, which focused on infrastructure improvements and developer experience (including deployment, live error collection and monitoring aggregation).  My role involved engineering, architectural decisions and co-ordinating the work of others in this area.
+	\item Following a cyber attack in 2013, I architected, helped engineer and cordinated roll-out of a tool to put multifactor authentication in front of all of the FT's staff-facing tools.
 \end{itemize}
+\end{detail}
 
 
 \item Assanka: November 2010 - December 2011
 \subsection*{Web Developer}
+\begin{detail}
 Worked on various web projects for a range of clients, doing both backend and frontend work. Backends included Wordpress, an in-house framework and vanilla PHP. Frontend javascript varied from simple jQuery-based interfaces, to large object-orientated systems which utilised many HTML5 features.
 Assanka was acquired by the Financial Times at the end of 2011 and was later rebranded ``FT Labs".
+\end{detail}
 
 \end{itemize}
 
@@ -115,16 +131,20 @@ Discussed performance best practices when using cutting edge web technologies.
 Spoke about the consolidation of our caching and routing logic across environments using puppet.
 \end{itemize}
 
+\pagebreak
 \section*{Education}
 \begin{itemize}
 
-\item Edinburgh University: 2006 - 2010 \subsection*{BSc (Hons) Computer Science and Physics}
+\item Edinburgh University: 2006 - 2010
+\subsection*{BSc (Hons) Computer Science and Physics}
+\begin{detail}
 A joint degree, with an emphasis on Computer Science, covering specialist areas such as Distributed Systems, Multi-Agent Semantic Web Systems, Computer Security and Communication \& Networking.
 My Honours project used Semantic Web technologies to provide data for a Semi-Automatic Guesstimation system.
 \subsubsection*{Publications}
 \em A Single-Significant-Digit Calculus for Semi-Automated Guesstimation \em\\
 Jonathan Abourbih, {\bf Luke Blaney}, Alan Bundy and Fiona McNeill\\
 IJCAR 2010
+\end{detail}
 
 \item Lagan College, Belfast: 1999 - 2006
 \begin{itemize}\item {\bf A-levels}: Maths (A), Irish (A), Physics (B), Chemistry (C)
@@ -133,7 +153,7 @@ IJCAR 2010
 
 \end{itemize}
 
-\subsection*{Previous Work Experience}
+\section*{Previous Work Experience}
 \begin{itemize}
 
 \item Edinburgh University Students Association, Entertainments Crew - {\bf Lighting Technician}: 2007 - 2010
@@ -154,8 +174,8 @@ IJCAR 2010
 \item Edinburgh University Cheerleading Society - {\bf Publicity Manager/Webmaster}: 2008 - 2010
 \item Edinburgh University Juggling Society (including 2009 Scottish Juggling convention)
 	\begin{itemize}
-	\item {\bf Secretary}: 2007 - 2008 
-	\item {\bf President}: 2008 - 2009 
+	\item {\bf Secretary}: 2007 - 2008
+	\item {\bf President}: 2008 - 2009
 	\item {\bf Treasurer}: 2009 - 2010
 	\end{itemize}
 \item Edinburgh University Footlights - {\bf Webmaster}: 2009 - 2010
