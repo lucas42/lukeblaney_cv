@@ -10,13 +10,6 @@ jobs:
       - run:
           name: Build Docker image
           command: DOCKER_BUILDKIT=1 docker build --tag cv --output . .
-      # The above command should output the pdf to the host machine (And works locally on my laptop)
-      # But for some reason no pdf is found on circleCI, so the following is needed:
-      - run:
-          name: Workaround to get pdf out of docker in circleCI
-          command: |
-             docker create --name cv cv -
-             docker cp cv:cv.pdf .
       - store_artifacts:
           path: cv.pdf
 
