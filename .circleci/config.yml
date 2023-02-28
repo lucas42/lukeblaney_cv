@@ -12,6 +12,8 @@ jobs:
           command: DOCKER_BUILDKIT=1 docker build --tag cv --output . .
       - store_artifacts:
           path: cv.pdf
+      - store_artifacts:
+          path: cv-full.pdf
 
 workflows:
   version: 2
