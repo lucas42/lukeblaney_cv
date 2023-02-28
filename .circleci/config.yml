@@ -13,7 +13,7 @@ jobs:
       - store_artifacts:
           path: cv.pdf
       - store_artifacts:
-          path: cv-full.pdf
+          path: cv-extended.pdf
 
 workflows:
   version: 2
