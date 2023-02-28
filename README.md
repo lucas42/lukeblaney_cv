@@ -8,7 +8,7 @@ This repository only contains the latex source - for a rendered version, visit [
 * docker
 
 ## Compiling to PDF
-Run `DOCKER_BUILDKIT=1 docker build --output . .`, the resulting PDF will be called cv.pdf
+Run `docker build --output . .`, the resulting PDFs will be called cv.pdf and cv-extended.pdf
 
 ## Build-time Dependencies
 
@@ -16,4 +16,5 @@ Run `DOCKER_BUILDKIT=1 docker build --output . .`, the resulting PDF will be cal
 
 ## Compilation without docker
 
-Run `pdflatex cv.tex`, the resulting PDF will be called cv.pdf
+* Run `pdflatex cv.tex`, the resulting PDF will be called cv.pdf
+* Run `pdflatex cv-extended.tex`, the resulting PDF will be called cv-extended.pdf
