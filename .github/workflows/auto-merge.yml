@@ -3,4 +3,4 @@ on: pull_request
 
 jobs:
   dependabot:
-    uses: lucas42/.github/.github/workflows/reusable-dependabot-auto-merge.yml@v1.8.0
+    uses: lucas42/.github/.github/workflows/reusable-dependabot-auto-merge.yml@v1.16.0
