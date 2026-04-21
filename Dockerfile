@@ -7,6 +7,7 @@ RUN pdflatex cv.tex
 RUN pdflatex cv-security.tex
 RUN pdflatex cv-tech.tex
 RUN pdflatex cv-manager.tex
+RUN pdflatex cv-architect.tex
 RUN pdflatex cv-extended.tex
 
 FROM scratch AS export-stage
