@@ -60,46 +60,17 @@ Led the company's cyber security function through a period of organisational cha
 - Involved in recruitment of a permanent VP of Cyber Security.
 
 
-## Principal Engineer - Observability, Edge Delivery & Cyber Security
-Financial Times: September 2021 - March 2022
+## Principal Engineer - Reliability Engineering, Cyber Security, Observability & Edge Delivery
+Financial Times: February 2018 - March 2022
 
-Working on the strategic direction in three key areas across the
-FT's technology department.
+Ran a selection of engineering teams throughout this period, including building a new one from scratch. Led the company-wide strategic direction in these areas, as well as managing the delivery of initiatives within the relevant teams.
 
-- Responsible for line management of 2 in-house engineering teams, plus the relationship with an off-shore 3rd party engineering team.
-- Worked on vendor management of key suppliers within relevant domains and set the direction of the FT's relationships with them.
-- Steered changes to the department's approach to tracking security risk with an aim to make it more outcome-focused.
-- Analysis of how observability and security tooling is being used across the company and putting in place strategic plans for these, including end-of-life roadmaps for tools which give minimal value.
-- Recruited engineers for vacancies within our teams, including both internal & external candidates. Aimed to keep diversity and equity at forefront of hiring decisions, including actively modifying our recruitment process following feedback from neurodiverse candidates.
-
-
-## Principal Engineer - Cyber Security
-Financial Times: September 2020 - September 2021
-
-Leading the engineering function of the FT's cyber security team.
-
-- Acted as tech lead and line manager for engineers in the cyber security team
+- Technical leadership for 3 engineering squads, with line management of 2 in-house teams plus the relationship with a 3rd off-shore team.
+- Successfully led and completed the company-wide migration of several engineering tools from on-premise software to Software-as-a-Service alternatives, including Code Hosting, Issue Tracking and Single Sign-On. Took over the SSO migration when it had been behind schedule and lacking direction, and delivered it on time and on budget.
+- Oversaw the delivery of several core technical tools used extensively across the company, including a monitoring aggregation platform, tech migration tracker and change management system.
+- Led the strategy and implementation of democratisation of security data — enabling engineering teams to make better decisions around their own risks.
 - Rolled out a new company-wide security incident management process and took the lead on managing security incidents.
-- Took responsibility for shaping the team's roadmap and seeing projects through to completion.
-- Contributed to group-wide strategy, ensuring security was well represented.
-- Led the strategy and implementation of democratisation of security data --- enabling engineering teams to make better decisions around their own risks.
-- Advised on security related concerns across all the FT's engineering teams.
-- Took over responsibility for the company-wide migration of Single Sign-On platform, which had been behind schedule and lacking direction. Delivered it on time and on budget.
-
-
-## Principal Engineer - Reliability Engineering
-Financial Times: February 2018 - August 2020
-
-Running a new team, set up to improve reliability of systems and
-reduce duplication of effort across technology teams at the FT.
-
-- Formed a brand new team whose members had backgrounds in a variety of different domains.
-- Jointly led the team, taking on line management responsibilities for half its members.
-- Supported engineers from other teams joining us on three-month secondments.
-- Actively involved in the full recruitment process for new members of the team.
-- Oversaw the delivery of several core technical tools, now used extensively across the company, including a monitoring aggregation platform, tech migration tracker and change management system.
-- Worked with engineering teams throughout the department to build a clearer understanding of our estate (including bespoke software, enterprise systems and SaaS solutions)
-- Successfully led and completed the company-wide migration of several engineering tools from on-premise software to Software-as-a-Service alternatives, including Code Hosting and Issue Tracking platforms. As part of this, I did the vendor management, led technical migration strategy and project managed the end-to-end moves.
+- Recruited engineers for vacancies within our teams, with diversity and equity at the forefront of hiring decisions, including actively modifying our recruitment process following feedback from neurodiverse candidates.
 
 
 ## Architect - Content
