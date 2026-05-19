@@ -18,6 +18,7 @@ Set strategic direction for cyber security at the FT.
 - Introduced and oversaw a new process for renewing and refreshing technical policies across the organisation.
 - Responsible for security incident management and contributed to wider crisis management.
 - Spent 3 months on secondment to the FT's parent company, Nikkei, in Tokyo. Assisted their product security function and strengthened ties between the two companies.
+- Throughout this period, also held the unbackfilled Principal Engineer responsibilities for Cyber Security — providing the technical direction that role usually requires, while delegating day-to-day team management to senior engineers on the team.
 
 
 ## Interim VP of Cyber Security
@@ -31,6 +32,7 @@ organisational change.
 - Steered the direction of Security work across the technology department, and the organisation as a whole.
 - Worked with a third party consultancy to build a strategic roadmap and help prioritise security initiatives.
 - Involved in recruitment of a permanent VP of Cyber Security.
+- Continued the Principal Engineer technical-direction responsibilities for Cyber Security throughout this period, as the PE position had not been backfilled when I moved up.
 
 
 ## Principal Engineer - Observability, Edge Delivery & Cyber Security
