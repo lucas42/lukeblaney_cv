@@ -170,16 +170,16 @@ Edinburgh University: 2006 - 2010
 
 A joint degree, with an emphasis on Computer Science, covering specialist areas such as Distributed Systems, Multi-Agent Semantic Web Systems, Computer Security and Communication & Networking. My Honours project used Semantic Web technologies to provide data for a Semi-Automatic Guesstimation system.
 
-### Publications
-
-*A Single-Significant-Digit Calculus for Semi-Automated Guesstimation*
-Jonathan Abourbih, **Luke Blaney**, Alan Bundy and Fiona McNeill — IJCAR 2010
-
 ## A-levels and GCSEs
 Lagan College, Belfast: 1999 - 2006
 
 - **A-levels**: Maths (A), Irish (A), Physics (B), Chemistry (C)
 - **GCSEs**: Maths (A\*), Science (A\*A\*), Irish (A\*) + 1 A, 4 Bs and 1 C.
+
+# Publications
+
+*A Single-Significant-Digit Calculus for Semi-Automated Guesstimation*
+Jonathan Abourbih, **Luke Blaney**, Alan Bundy and Fiona McNeill — IJCAR 2010
 
 # Earlier Career {#earlier-career .unnumbered}
 - Edinburgh University Students Association, Entertainments Crew - **Lighting Technician**: 2007 - 2010
