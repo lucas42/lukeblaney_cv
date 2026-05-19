@@ -124,7 +124,6 @@ physical kit in our datacentres. This involved:
 
 
 ## Labs Developer - FT Labs
-`[Note: Officially, my job title did not change for this period. Included separately for clarity.]`
 Financial Times: December 2011 - December 2014
 
 In this role, I gained experience with the full stack of web
