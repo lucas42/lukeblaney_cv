@@ -12,7 +12,17 @@ jobs:
       - store_artifacts:
           path: cv.pdf
       - store_artifacts:
+          path: cv-architect.pdf
+      - store_artifacts:
+          path: cv-manager.pdf
+      - store_artifacts:
+          path: cv-security.pdf
+      - store_artifacts:
+          path: cv-tech.pdf
+      - store_artifacts:
           path: cv-extended.pdf
+      - store_artifacts:
+          path: cv-extended.docx
 
 workflows:
   version: 2
