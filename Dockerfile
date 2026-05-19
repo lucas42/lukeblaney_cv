@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     pandoc \
  && rm -rf /var/lib/apt/lists/*
 
-COPY *.tex *.md ./
+COPY *.tex *.md pandoc-docx-reference.docx ./
 
 # Legacy LaTeX role-variant builds (PDF only). These will be retired as
 # equivalent markdown variants are derived from cv-extended.md.
@@ -25,12 +25,12 @@ RUN pdflatex cv-architect.tex
 # pandoc-pdf-header.tex disables LaTeX's mid-word hyphenation so ATS
 # keyword matching is not broken by word-wrap (DOCX doesn't need this).
 RUN pandoc cv-extended.md -H pandoc-pdf-header.tex -V fontsize=10pt -o cv-extended.pdf
-RUN pandoc cv-extended.md -o cv-extended.docx
+RUN pandoc cv-extended.md --reference-doc=pandoc-docx-reference.docx -o cv-extended.docx
 
 # Role-specific submission variants. Each is a curated subset of
 # cv-extended.md tuned to a particular JD or role archetype.
 RUN pandoc cv-staff-engineer.md -H pandoc-pdf-header.tex -V fontsize=10pt -o cv-staff-engineer.pdf
-RUN pandoc cv-staff-engineer.md -o cv-staff-engineer.docx
+RUN pandoc cv-staff-engineer.md --reference-doc=pandoc-docx-reference.docx -o cv-staff-engineer.docx
 
 FROM scratch AS export-stage
 COPY --from=build-stage *.pdf *.docx /
