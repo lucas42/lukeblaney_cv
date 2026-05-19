@@ -51,7 +51,7 @@ Leading the engineering function of the FT's cyber security team.
 - Rolled out a new company-wide security incident management process and took the lead on managing security incidents.
 - Took responsibility for shaping the team's roadmap and seeing projects through to completion.
 - Contributed to group-wide strategy, ensuring security was well represented.
-- Led the stragety and implementation of democratisation of security data --- enabling engineering teams to make better decisions around their own risks.
+- Led the strategy and implementation of democratisation of security data --- enabling engineering teams to make better decisions around their own risks.
 - Advised on security related concerns across all the FT's engineering teams.
 - Took over responsibility for the company-wide migration of Single Sign-On platform, which had been behind schedule and lacking direction. Delivered it on time and on budget.
 
@@ -69,7 +69,7 @@ reduce duplication of effort across technology teams at the FT.
 - Was a department rep for the move of our company headquarters. In collaboration with reps from across the business, I worked representing the 300+ people in our area, ensuring they could make the move seamlessly.
 - Oversaw the delivery of several core technical tools, now used extensively across the company, including a monitoring aggregation platform, tech migration tracker and change management system.
 - Worked with engineering teams throughout the department to build a clearer understanding of our estate (including bespoke software, enterprise systems and SaaS solutions)
-- Succesfully led and completed the company-wide migration of several engineering tools from on-premise software to Software-as-a-Service alternatives, including Code Hosting and Issue Tracking platforms. As part of this, I did the vendor management, led technical migration strategy and project managed the end-to-end moves.
+- Successfully led and completed the company-wide migration of several engineering tools from on-premise software to Software-as-a-Service alternatives, including Code Hosting and Issue Tracking platforms. As part of this, I did the vendor management, led technical migration strategy and project managed the end-to-end moves.
 
 
 ## Architect - Content
