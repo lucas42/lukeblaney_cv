@@ -118,24 +118,10 @@ physical kit in our datacentres. This involved:
 - Architected & development of a cloud-native zero-downtime deployment pipeline
 
 
-## Labs Developer - FT Labs
-Financial Times: December 2011 - December 2014
+# Earlier Career {#earlier-career .unnumbered}
 
-In this role, I gained experience with the full stack of web
-development technologies, from using bleeding-edge browser features in
-the FT's HTML5 Web App, through to server management and configuration
-using tools like Puppet, Varnish and Apache.
-
-- Worked on the original incarnation of FastFT, a real-time news service. This included a customer-facing frontend, an API and bespoke CMS for editorial users.
-- Led FT Labs' internal tooling workstream, which focused on infrastructure improvements and developer experience (including deployment, live error collection and monitoring aggregation). My role involved engineering, architectural decisions and co-ordinating the work of others in this area.
-- Following a cyber attack in 2013, I architected, helped engineer and co-ordinated roll-out of a tool to put multifactor authentication in front of all of the FT's staff-facing tools.
-
-
-## Web Developer
-Assanka: November 2010 - December 2011
-
-Worked on various web projects for a range of clients, doing both backend and frontend work. Backends included Wordpress, an in-house framework and vanilla PHP. Frontend javascript varied from simple jQuery-based interfaces, to large object-orientated systems which utilised many HTML5 features. Assanka was acquired by the Financial Times at the end of 2011 and was later rebranded "FT Labs".
-
+- FT Labs - **Labs Developer**: December 2011 - December 2014
+- Assanka - **Web Developer**: November 2010 - December 2011
 
 # Talks & Panels {#talks-panels .unnumbered}
 - **Panel: Building security into your engineering workflow \| LeadDev 2021**
