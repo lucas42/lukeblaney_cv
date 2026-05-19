@@ -1,6 +1,10 @@
 [Luke Blaney BSc (Hons)]{.smallcaps}
 
-Email Address:   <cv@lukeblaney.co.uk>
+Email: <cv@lukeblaney.co.uk>  
+Location: London, England  
+LinkedIn: [linkedin.com/in/lukeblaney](https://www.linkedin.com/in/lukeblaney/)  
+GitHub: [github.com/lucas42](https://github.com/lucas42)  
+Website: [lukeblaney.co.uk](https://lukeblaney.co.uk/)
 
 # Employment
 
