@@ -27,6 +27,10 @@ jobs:
           path: cv-staff-engineer.pdf
       - store_artifacts:
           path: cv-staff-engineer.docx
+      - store_artifacts:
+          path: cv-engineering-director.pdf
+      - store_artifacts:
+          path: cv-engineering-director.docx
 
 workflows:
   version: 2
