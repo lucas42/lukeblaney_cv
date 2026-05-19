@@ -1,5 +1,6 @@
 % LaTeX header included by pandoc when producing PDFs.
-%
+
+% --- Hyphenation control ---
 % Discourage word hyphenation. ATS parsers tokenise PDF text on
 % whitespace, so "engineering" hyphenated at end-of-line becomes
 % "engi-neers" which no longer matches the keyword "engineers".
@@ -11,3 +12,14 @@
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
 \sloppy
+
+% --- Page geometry ---
+% Tighter margins than the LaTeX default (about 2.5cm all round). A
+% CV is dense by nature and the default whitespace pads the page count
+% out significantly.
+\usepackage[margin=1.5cm]{geometry}
+
+% --- Paragraph spacing ---
+% Pandoc's default puts substantial vertical space between bullets and
+% paragraphs. Tighten it for CVs without going all the way to flush.
+\setlength{\parskip}{0.3em}
