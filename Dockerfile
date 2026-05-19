@@ -24,12 +24,12 @@ RUN pdflatex cv-architect.tex
 # .pdf is the human-readable distribution; .docx is for ATS submissions.
 # pandoc-pdf-header.tex disables LaTeX's mid-word hyphenation so ATS
 # keyword matching is not broken by word-wrap (DOCX doesn't need this).
-RUN pandoc cv-extended.md -H pandoc-pdf-header.tex -o cv-extended.pdf
+RUN pandoc cv-extended.md -H pandoc-pdf-header.tex -V fontsize=10pt -o cv-extended.pdf
 RUN pandoc cv-extended.md -o cv-extended.docx
 
 # Role-specific submission variants. Each is a curated subset of
 # cv-extended.md tuned to a particular JD or role archetype.
-RUN pandoc cv-staff-engineer.md -H pandoc-pdf-header.tex -o cv-staff-engineer.pdf
+RUN pandoc cv-staff-engineer.md -H pandoc-pdf-header.tex -V fontsize=10pt -o cv-staff-engineer.pdf
 RUN pandoc cv-staff-engineer.md -o cv-staff-engineer.docx
 
 FROM scratch AS export-stage
