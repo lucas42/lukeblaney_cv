@@ -88,10 +88,6 @@ apps and third-party B2B clients.
 - Devised a framework for tracking progress on a multi-year project to decommission a suite of legacy software, in a way that made sense to both delivery managers and engineers.
 - Took on line management responsibilities for 2 integration engineers.
 
-I think my proudest accomplishment here was transforming a team
-heavily reliant on having an architect to one where engineers felt
-empowered to make their own architectural decisions.
-
 
 ## Platform Architect - Operational Intelligence
 Financial Times: December 2015 - October 2016
@@ -131,17 +127,9 @@ physical kit in our datacentres. This involved:
 - **Panel: Observability Strategies for Distributed Systems \| InfoQ Live 2020**\
 	Discussed approaches for observability when using microservices at this one-day online conference.
 - **Monitoring All the Things: Keeping Track of a Mixed Estate \| QCon London 2020; Continuous Lifecycle 2020**\
-	Spoke about effectively monitoring the tech estate of a company which uses a variety of different technologies and monitoring approaches.  Was also on a panel about the value of microservices at the QCon event.
-- **Panel: Standardisation and autonomy in our tech choices \| Engine Room, London 2019**\
-	Discussed the value of consistency versus local optimisation in our technical approaches at the FT's internal tech conference.
-- **Panel: Do we only measure things that are easy to measure? \| Engine Room, London 2017**\
-	Chaired a panel discussing the use of metrics in tech and product decisions at the FT's internal tech conference.
+	Spoke about effectively monitoring the tech estate of a company which uses a variety of different technologies and monitoring approaches.
 - **Creating a multi-factor authentication solution \| Varnish Summit & Awards, Los Angeles 2016**\
 	Spoke about how the FT used varnish to protect our estate with MFA and tackle phishing attacks. Also collected the Varnish Innovation Award at the same event.
-- **Panel: Page Load Performance \| Edgeconf, London 2014** \
-	Discussed performance best practices when using cutting edge web technologies.
-- **One VCL to rule all our environments \| Varnish User Group, Berlin 2013**\
-	Spoke about the consolidation of our caching and routing logic across environments using puppet.
 
 For a full list of Talks & Panels I've done, see
 <https://lukeblaney.co.uk/talks/>
