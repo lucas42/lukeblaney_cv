@@ -1,4 +1,6 @@
+::: {custom-style="Title"}
 [Luke Blaney BSc (Hons)]{.smallcaps}
+:::
 
 Email: <cv@lukeblaney.co.uk>  
 Location: London, England  
