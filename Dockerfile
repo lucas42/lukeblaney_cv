@@ -27,5 +27,10 @@ RUN pdflatex cv-architect.tex
 RUN pandoc cv-extended.md -H pandoc-pdf-header.tex -o cv-extended.pdf
 RUN pandoc cv-extended.md -o cv-extended.docx
 
+# Role-specific submission variants. Each is a curated subset of
+# cv-extended.md tuned to a particular JD or role archetype.
+RUN pandoc cv-staff-engineer.md -H pandoc-pdf-header.tex -o cv-staff-engineer.pdf
+RUN pandoc cv-staff-engineer.md -o cv-staff-engineer.docx
+
 FROM scratch AS export-stage
 COPY --from=build-stage *.pdf *.docx /
