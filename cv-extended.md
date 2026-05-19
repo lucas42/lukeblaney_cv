@@ -87,7 +87,8 @@ Worked on our Universal Publishing Platform, which delivers
 Content & Metadata from a range of editorial tools to our websites,
 apps and third-party B2B clients.
 
-- Responsible for architectural decisions across a whole programme of work (6 dev teams, in 2 countries)
+- Responsible for architectural decisions across a whole programme of work — 6 development teams across 2 countries, building a platform of 100+ microservices.
+- Worked on an event-driven architecture using Apache Kafka to move content and metadata across editorial systems, web/app delivery, and B2B clients. Made architectural decisions about event flows and data contracts; configuration and operations were owned by engineers on the platform.
 - Designed a suite of new APIs to power an in-house metadata management tool for the newsroom.
 - Worked closely with stakeholders from Editorial, B2B and Technology departments.
 - Successfully repositioned our relationship with an existing supplier so they'd take on operational responsibility for the software they were building.
