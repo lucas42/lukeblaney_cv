@@ -175,9 +175,11 @@ A joint degree, with an emphasis on Computer Science, covering specialist areas 
 *A Single-Significant-Digit Calculus for Semi-Automated Guesstimation*
 Jonathan Abourbih, **Luke Blaney**, Alan Bundy and Fiona McNeill — IJCAR 2010
 
-## Lagan College, Belfast: 1999 - 2006
-	- **A-levels**: Maths (A), Irish (A), Physics (B), Chemistry (C)
-	- **GCSEs**: Maths (A\*), Science (A\*A\*), Irish (A\*) + 1 A, 4 Bs and 1 C.
+## A-levels and GCSEs
+Lagan College, Belfast: 1999 - 2006
+
+- **A-levels**: Maths (A), Irish (A), Physics (B), Chemistry (C)
+- **GCSEs**: Maths (A\*), Science (A\*A\*), Irish (A\*) + 1 A, 4 Bs and 1 C.
 
 # Earlier Career {#earlier-career .unnumbered}
 - Edinburgh University Students Association, Entertainments Crew - **Lighting Technician**: 2007 - 2010
