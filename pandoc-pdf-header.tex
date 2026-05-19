@@ -1,0 +1,13 @@
+% LaTeX header included by pandoc when producing PDFs.
+%
+% Discourage word hyphenation. ATS parsers tokenise PDF text on
+% whitespace, so "engineering" hyphenated at end-of-line becomes
+% "engi-neers" which no longer matches the keyword "engineers".
+%
+% Setting both penalties to 10000 prevents LaTeX from inserting any
+% hyphen-based breaks, mid-word or at existing hyphens. \sloppy then
+% allows LaTeX to widen inter-word spacing to fit lines, instead of
+% needing to break a word.
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\sloppy

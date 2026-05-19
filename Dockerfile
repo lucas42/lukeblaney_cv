@@ -22,7 +22,9 @@ RUN pdflatex cv-architect.tex
 
 # Source-of-truth extended CV, built via pandoc for ATS-clean output.
 # .pdf is the human-readable distribution; .docx is for ATS submissions.
-RUN pandoc cv-extended.md -o cv-extended.pdf
+# pandoc-pdf-header.tex disables LaTeX's mid-word hyphenation so ATS
+# keyword matching is not broken by word-wrap (DOCX doesn't need this).
+RUN pandoc cv-extended.md -H pandoc-pdf-header.tex -o cv-extended.pdf
 RUN pandoc cv-extended.md -o cv-extended.docx
 
 FROM scratch AS export-stage
