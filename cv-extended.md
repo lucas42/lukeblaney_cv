@@ -176,14 +176,14 @@ Jonathan Abourbih, **Luke Blaney**, Alan Bundy and Fiona McNeill — IJCAR 2010
 	- **A-levels**: Maths (A), Irish (A), Physics (B), Chemistry (C)
 	- **GCSEs**: Maths (A\*), Science (A\*A\*), Irish (A\*) + 1 A, 4 Bs and 1 C.
 
-# Previous Work Experience {#previous-work-experience .unnumbered}
+# Earlier Career {#earlier-career .unnumbered}
 - Edinburgh University Students Association, Entertainments Crew - **Lighting Technician**: 2007 - 2010
 - BBC Irish Language department - **One week's Work Placement**: Summer 2009
 - J Sainsbury plc - **Customer Services Assistant**: May 2005 - Dec 2005
 - Andor Technology Ltd. - **One week's Work Placement**: February 2005
 - Queen's University Belfast Media Services - **One week's Work Placement**: June 2003.
 
-# Positions of responsibility {#positions-of-responsibility .unnumbered}
+# Positions of Responsibility {#positions-of-responsibility .unnumbered}
 - London Revolution Cheer - **Secretary**: 2013 - 2014.
 - PHP London (including PHP UK conference 2012) - **Treasurer**: 2011 - 2012
 - Edinburgh University Theatre Company - **Webmaster**: 2009 - 2010
