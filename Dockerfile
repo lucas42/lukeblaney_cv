@@ -31,6 +31,8 @@ RUN pandoc cv-extended.md --reference-doc=pandoc-docx-reference.docx.template -o
 # cv-extended.md tuned to a particular JD or role archetype.
 RUN pandoc cv-staff-engineer.md -H pandoc-pdf-header.tex.template -V fontsize=10pt -o cv-staff-engineer.pdf
 RUN pandoc cv-staff-engineer.md --reference-doc=pandoc-docx-reference.docx.template -o cv-staff-engineer.docx
+RUN pandoc cv-engineering-director.md -H pandoc-pdf-header.tex.template -V fontsize=10pt -o cv-engineering-director.pdf
+RUN pandoc cv-engineering-director.md --reference-doc=pandoc-docx-reference.docx.template -o cv-engineering-director.docx
 
 FROM scratch AS export-stage
 COPY --from=build-stage *.pdf *.docx /
