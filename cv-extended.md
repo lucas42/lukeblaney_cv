@@ -17,8 +17,8 @@ Set strategic direction for cyber security at the FT.
 
 - Defined the vision and set the strategy for IT Risk and Cyber Security.
 - Senior stakeholder management - acting as a bridge between business colleagues and engineers.
-- Introduced and oversaw a new process for renewing and refreshing technical policies across the organisation.
-- Responsible for security incident management and contributed to wider crisis management.
+- Introduced and oversaw a new process for renewing and refreshing technical policies across the organisation, increasing discoverability of policies and improving adherence.
+- Led security incident management and contributed to a new company-wide crisis management team.
 - Spent 3 months on secondment to the FT's parent company, Nikkei, in Tokyo. Assisted their product security function and strengthened ties between the two companies.
 - Throughout this period, also held the unbackfilled Principal Engineer responsibilities for Cyber Security — providing the technical direction that role usually requires, while delegating day-to-day team management to senior engineers on the team.
 
@@ -89,10 +89,13 @@ apps and third-party B2B clients.
 
 - Responsible for architectural decisions across a whole programme of work — 6 development teams across 2 countries, building a platform of 100+ microservices.
 - Worked on an event-driven architecture using Apache Kafka to move content and metadata across editorial systems, web/app delivery, and B2B clients. Made architectural decisions about event flows and data contracts; configuration and operations were owned by engineers on the platform.
+- Led a migration to Kubernetes, simplifying operations and reducing technical risk across 5 engineering squads in a business-critical area.
+- Pivoted the architect role from a decision bottleneck to a more consultative one, giving engineering squads more autonomy for day-to-day decisions.
 - Designed a suite of new APIs to power an in-house metadata management tool for the newsroom.
 - Worked closely with stakeholders from Editorial, B2B and Technology departments.
 - Successfully repositioned our relationship with an existing supplier so they'd take on operational responsibility for the software they were building.
-- Devised a framework for tracking progress on a multi-year project to decommission a suite of legacy software, in a way that made sense to both delivery managers and engineers.
+- Planned and co-ordinated a multi-team, multi-year programme to replace a suite of legacy on-premise business-critical software with a mix of SaaS solutions and cloud-hosted bespoke microservices.
+- Devised a framework for tracking progress on the legacy decommissioning, in a way that made sense to both delivery managers and engineers.
 - Took on line management responsibilities for 2 integration engineers.
 
 I think my proudest accomplishment here was transforming a team
@@ -105,9 +108,10 @@ Financial Times: December 2015 - October 2016
 
 Technical lead on a team responsible for observability tools used
 across the department (covering monitoring, metrics & log
-aggregation). We also introduced a new system for keeping track of the
-FT's technical estate, which provided automated runbook creation and
-monitoring management. My role included:
+aggregation). We also replaced the organisation's CMDB with a new
+system for tracking the FT's technical estate, which provided
+automated runbook creation, monitoring management, and bridged the
+gap between Engineering and Operations teams. My role included:
 
 - System design, development and backlog prioritisation
 - Upskilling a team from disparate backgrounds and recruitment of junior developers
@@ -153,7 +157,9 @@ Worked on various web projects for a range of clients, doing both backend and fr
 - **Panel: Observability Strategies for Distributed Systems \| InfoQ Live 2020**\
 	Discussed approaches for observability when using microservices at this one-day online conference.
 - **Monitoring All the Things: Keeping Track of a Mixed Estate \| QCon London 2020; Continuous Lifecycle 2020**\
-	Spoke about effectively monitoring the tech estate of a company which uses a variety of different technologies and monitoring approaches.  Was also on a panel about the value of microservices at the QCon event.
+	Spoke about effectively monitoring the tech estate of a company which uses a variety of different technologies and monitoring approaches.
+- **Panel: Microservices --- Are they still worth it? \| QCon London 2020**\
+	Discussed the ongoing value of microservices architecture in a panel at the same event.
 - **Panel: Standardisation and autonomy in our tech choices \| Engine Room, London 2019**\
 	Discussed the value of consistency versus local optimisation in our technical approaches at the FT's internal tech conference.
 - **Panel: Do we only measure things that are easy to measure? \| Engine Room, London 2017**\
