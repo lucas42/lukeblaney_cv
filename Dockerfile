@@ -19,5 +19,11 @@ COPY *.md *.template ./
 RUN pandoc cv-extended.md -H pandoc-pdf-header.tex.template -V fontsize=10pt -o cv-extended.pdf
 RUN pandoc cv-extended.md --reference-doc=pandoc-docx-reference.docx.template -o cv-extended.docx
 
+# Slimmed-down general-purpose CV — default for website link and
+# untargeted outreach. Per-JD tailored variants now live in the
+# private lukeblaney_cv_tailored repo.
+RUN pandoc cv.md -H pandoc-pdf-header.tex.template -V fontsize=10pt -o cv.pdf
+RUN pandoc cv.md --reference-doc=pandoc-docx-reference.docx.template -o cv.docx
+
 FROM scratch AS export-stage
 COPY --from=build-stage *.pdf *.docx /
