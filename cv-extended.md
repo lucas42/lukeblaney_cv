@@ -89,7 +89,7 @@ apps and third-party B2B clients.
 
 - Responsible for architectural decisions across a whole programme of work — 6 development teams across 2 countries, building a platform of 100+ microservices.
 - Worked on an event-driven architecture using Apache Kafka to move content and metadata across editorial systems, web/app delivery, and B2B clients. Made architectural decisions about event flows and data contracts; configuration and operations were owned by engineers on the platform.
-- Led a migration to Kubernetes, simplifying operations and reducing technical risk across 5 engineering squads in a business-critical area.
+- Architected the move to Kubernetes for 5 engineering squads in a business-critical area, simplifying operations and reducing technical risk.
 - Pivoted the architect role from a decision bottleneck to a more consultative one, giving engineering squads more autonomy for day-to-day decisions.
 - Designed a suite of new APIs to power an in-house metadata management tool for the newsroom.
 - Worked closely with stakeholders from Editorial, B2B and Technology departments.
