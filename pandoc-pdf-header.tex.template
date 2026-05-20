@@ -36,3 +36,17 @@
 \titleformat{\section}{\Large\bfseries\color{brand}}{}{0pt}{}
 \titleformat{\subsection}{\large\bfseries\color{brand}}{}{0pt}{}
 \titleformat{\subsubsection}{\normalsize\bfseries\color{brand}}{}{0pt}{}
+
+% --- Document title block ---
+% Pandoc's YAML `title:` produces \title{...} and \maketitle. The default
+% \maketitle from the article class emits a small Roman title — we want a
+% large, bold, smallcaps, brand-purple, centred block matching the DOCX
+% Title style. Redefine \maketitle to do that.
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{center}
+    {\fontsize{20pt}{24pt}\selectfont\bfseries\color{brand}\textsc{\@title}}
+  \end{center}
+  \vspace{0.3em}
+}
+\makeatother
