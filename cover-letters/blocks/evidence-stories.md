@@ -120,6 +120,8 @@ Each story has:
 - Where did the pre-existing teams sit before centralisation (which BUs / functions)?
 - Anything measurable that improved post-centralisation (faster incident response? Better risk-decision throughput? Fewer duplicate efforts?)
 
+**Pairs with**: [Story 9 — Incident management programme](#9-incident-management-programme). Story 7 sells the org structure; Story 9 sells what got built inside it.
+
 ---
 
 ## 8. Mixed-estate monitoring / observability platform
@@ -137,6 +139,26 @@ Each story has:
 - Any measurable outcome — faster incident response, reduction in unmonitored systems, fewer "who owns this?" questions?
 
 **Pairs with**: [Story 4 — Reliability Engineering team from scratch](#4-reliability-engineering-team-from-scratch). Story 8 sells the platform; Story 4 sells the team that owns it.
+
+---
+
+## 9. Incident management programme
+
+**Tags**: incident management, crisis management, cyber incident response, operational incidents, tabletop exercises, executive stakeholder communication, mission-critical systems, asset inventory, ownership and accountability
+
+**Short**:
+> At the FT I led the rollout of a new company-wide security incident management process and the work to ensure every mission-critical system was documented, monitored, backed-up, classified by importance, and had clear technical ownership. I've run live incidents across operational, cyber, and crisis-management contexts, and coordinated tabletop exercises for executives.
+
+**Long**:
+> At the FT I rolled out a new company-wide security incident management process and built the foundations underneath it. That meant org-wide initiatives to make sure every system in our estate was documented, monitored, backed-up, classified by importance (so we knew which were mission-critical), and had identified technical ownership with appropriate security protections in place. I've also run live incidents across operational, cyber, and crisis-management contexts — responsible for the processes, tooling and comms, coordinating tabletop exercises for executives, and aligning the technical incident processes with the wider enterprise crisis-management framework.
+
+**Gaps** (medium priority):
+- Any specific reference incident (anonymised) worth flagging?
+- Roughly how many systems were brought into the asset / ownership / classification regime?
+- Frequency of executive tabletop exercises (annual? quarterly? per-team rotation?)
+- Any measurable outcome — MTTD / MTTR change, reduction in unowned systems, audit improvement?
+
+**Pairs with**: [Story 7 — Centralised cyber security function](#7-centralised-cyber-security-function-interim-vp). Story 7 sells the org structure; Story 9 sells what got built inside it.
 
 ---
 
@@ -166,5 +188,6 @@ Match the story to the JD's primary signal:
 | "International / cross-cultural" | #6 Tokyo | (combine with #5) |
 | "Stakeholder management beyond engineering" | #1 standards | #6 Tokyo |
 | "Observability / monitoring at scale" | #8 mixed-estate monitoring | #4 Reliability Eng |
+| "Incident management / crisis management" | #9 incident management | #7 centralised function |
 
 Avoid stacking three stories in one paragraph — pick one or two, tell them properly.
