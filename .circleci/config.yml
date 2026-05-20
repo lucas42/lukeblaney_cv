@@ -8,29 +8,9 @@ jobs:
       - setup_remote_docker
       - run:
           name: Build Docker image
-          command: DOCKER_BUILDKIT=1 docker build --tag cv --output . .
+          command: DOCKER_BUILDKIT=1 docker build --tag cv --output ./artifacts .
       - store_artifacts:
-          path: cv.pdf
-      - store_artifacts:
-          path: cv-architect.pdf
-      - store_artifacts:
-          path: cv-manager.pdf
-      - store_artifacts:
-          path: cv-security.pdf
-      - store_artifacts:
-          path: cv-tech.pdf
-      - store_artifacts:
-          path: cv-extended.pdf
-      - store_artifacts:
-          path: cv-extended.docx
-      - store_artifacts:
-          path: cv-staff-engineer.pdf
-      - store_artifacts:
-          path: cv-staff-engineer.docx
-      - store_artifacts:
-          path: cv-engineering-director.pdf
-      - store_artifacts:
-          path: cv-engineering-director.docx
+          path: artifacts
 
 workflows:
   version: 2
