@@ -53,5 +53,7 @@ British / Irish English. Northern Hiberno-English where the choice is ambiguous.
 - **Boilerplate openers** that could appear identically in a letter to another company.
 - **Adjective-only descriptions of yourself** ("I'm pragmatic", "I work well with stakeholders") without a concrete story behind them.
 - **The career break as paragraph 2.** It's no longer the headline; the current-focus work is.
-- **Buzzwords like "AI Native", "transformational change", "synergies".** Measured framing reads as more credible.
+- **Buzzwords like "AI Native", "transformational change", "synergies", "leverage", "step change", "unlock value".** Measured framing reads as more credible. See `luke-voice` feedback memory for the full ban list.
+- **Sentences that depend on the CV to parse.** Cover letters must stand alone — many recruiters read them before the CV. See `cover-letter-standalone` feedback memory.
+- **Fake-passion claims** ("I find X genuinely motivating") about a company's mission unless Luke has confirmed he actually feels that way. Default to writing about why the *role* is interesting rather than why the company's mission is motivating.
 - **Stopping without a close** — every letter needs both a closing line and a sign-off.

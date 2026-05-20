@@ -37,7 +37,9 @@ Anchor sentences for paragraph 1. Pick the framing that fits the role archetype;
 ## Architect / Principal Architect / Staff Engineer (IC-track)
 
 ### Deliberate technical re-focus (when stepping out of director-level into IC)
-> "I'm interested in your [Role] role as a deliberate technical re-focus. Through my recent director-level roles I retained unbackfilled Principal Engineer responsibilities for cyber security technical direction, and I'm now looking for a role where that depth of hands-on architecture work is the primary expectation."
+> "I'm interested in your [Role] role. I've spent the last several years in a director-level cyber security role at the Financial Times, but kept the principal-engineer technical work alongside it rather than handing it off. I'm now looking for a role where that hands-on architecture is the main focus."
+
+*Stands alone — the reader doesn't need the CV to understand the level-shift being described.*
 
 ### Breadth-of-disciplines framing
 > "I have a lot of experience working on tech platforms across architecture, engineering, and cyber security — which gives me an unusually rounded view of the trade-offs a modern platform has to weigh."
