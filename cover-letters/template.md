@@ -2,6 +2,29 @@
 
 Four short paragraphs. Aim for 250–350 words total. Use the blocks in `blocks/` as raw material, but every letter must be individually crafted — no two openings should ever match.
 
+## File structure
+
+Cover-letter files in `lukeblaney_cv_tailored/orgs/{company-slug}/` use YAML frontmatter for internal metadata, then plain markdown for the letter body. The YAML is invisible to the rendered submission artefact; only the body below the closing `---` reaches the recipient.
+
+```markdown
+---
+role: {role title from JD}
+company: {company name}
+drafted: {YYYY-MM-DD}
+library-source: lucas42/lukeblaney_cv/cover-letters/
+---
+
+Dear {salutation},
+
+{body paragraphs 1–4}
+
+{sign-off},
+
+Luke Blaney
+```
+
+Do not put a `# Cover letter — …` H1 at the top of the body. The CV pandoc templates colour H1s in brand purple, which renders as a giant purple heading on the submitted document — exactly what you don't want on a cover letter. Internal "what is this" info belongs in the YAML frontmatter, not the body.
+
 ## Salutation
 
 - **`Dear [Name],`** — preferred. 60 seconds on LinkedIn or the company's "About" page usually surfaces the hiring manager or recruiter.
