@@ -23,3 +23,16 @@
 % Pandoc's default puts substantial vertical space between bullets and
 % paragraphs. Tighten it for CVs without going all the way to flush.
 \setlength{\parskip}{0.3em}
+
+% --- Brand colour ---
+% Match lukeblaney.co.uk's --primary-color (#306 = #330066) on all heading
+% levels. Body text stays black. Hyperlink colouring is set via pandoc
+% variables on the build command (colorlinks/urlcolor/linkcolor) so that
+% hyperref is fully configured by the time the values are applied — setting
+% them here would fire before hyperref is loaded.
+\usepackage{xcolor}
+\definecolor{brand}{HTML}{330066}
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries\color{brand}}{}{0pt}{}
+\titleformat{\subsection}{\large\bfseries\color{brand}}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{brand}}{}{0pt}{}
