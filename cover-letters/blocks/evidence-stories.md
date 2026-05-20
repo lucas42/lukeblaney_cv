@@ -108,13 +108,13 @@ Each story has:
 
 ## 7. Centralised cyber security function (interim VP)
 
-**Tags**: security leadership, organisational change, restructuring, multi-discipline team, budget consolidation
+**Tags**: security leadership, organisational change, restructuring, multi-discipline team, budget consolidation, stakeholder breadth, reaching disengaged stakeholders
 
 **Short**:
 > As Interim VP of Cyber Security, I built a new centralised security function — bringing together people, process, and budgets from across the organisation — which removed communication barriers and improved security outcomes across the company.
 
 **Long**:
-> As Interim VP of Cyber Security, I led the formation of a new centralised cyber security function, bringing together people, process, and budgets that had previously been distributed across `[N business units / departments]`. I line-managed the resulting mixed-discipline team of `[12 — confirm count?]` people, spanning Engineers, Risk Analysts, and IT governance roles. The consolidation removed communication barriers between security activities that had historically operated independently, gave the organisation a single point of accountability for security strategy, and led to better-aligned security outcomes across the technology department and the wider business.
+> As Interim VP of Cyber Security, I led the formation of a new centralised cyber security function, bringing together people, process, and budgets that had previously been distributed across `[N business units / departments]`. I line-managed the resulting mixed-discipline team of `[12 — confirm count?]` people, spanning Engineers, Risk Analysts, and IT governance roles. The consolidation removed communication barriers between security activities that had historically operated independently, gave the organisation a single point of accountability for security strategy, and led to better-aligned security outcomes across the technology department and the wider business — and gave me a remit to engage proactively across the widest range of stakeholders, from junior engineers to senior execs, including parts of the organisation that hadn't historically engaged with cyber security of their own accord.
 
 **Gaps** (medium priority):
 - Where did the pre-existing teams sit before centralisation (which BUs / functions)?
@@ -186,7 +186,7 @@ Match the story to the JD's primary signal:
 | "Cyber security leadership" | #7 centralised function | #5 FT-scale anchor |
 | "Platform team built from scratch" | #4 Reliability Eng | #7 centralised function |
 | "International / cross-cultural" | #6 Tokyo | (combine with #5) |
-| "Stakeholder management beyond engineering" | #1 standards | #6 Tokyo |
+| "Stakeholder management beyond engineering" | #1 standards | #7 centralised function |
 | "Observability / monitoring at scale" | #8 mixed-estate monitoring | #4 Reliability Eng |
 | "Incident management / crisis management" | #9 incident management | #7 centralised function |
 
