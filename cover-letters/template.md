@@ -73,6 +73,16 @@ See `blocks/openers.md` for anchor-sentence patterns by role archetype.
 
 British / Irish English. Northern Hiberno-English where the choice is ambiguous. Never Americanise spelling or grammar.
 
+## Whitespace conventions
+
+Luke's personal style. Apply consistently across all letters.
+
+1. **Double spaces between sentences.** Typewriter convention. Source the markdown with `.  ` (period + two ASCII spaces) between sentences in every paragraph.
+
+2. **First-line indent on paragraph 1 after the salutation.** The indent should visually align with the position of the comma in the greeting line above where feasible. When that's hard to pin down (proportional fonts vary), a tab or two of indent is fine. **Pandoc source implementation**: a leading tab on a fresh paragraph line triggers a code block, so don't use a literal tab. Instead use a run of Unicode non-breaking spaces (U+00A0) at the start of the first line of paragraph 1 — pandoc preserves these into both docx and pdf. Roughly 16–20 of them approximates "Dear hiring team," width in Calibri 11pt; adjust per salutation length.
+
+These conventions apply to letters generated from this library. They're also Luke's broader voice rule, so the double-space-between-sentences convention extends to the CV's prose blocks (Summary, role-intro lines, Career Break section) — but the indent rule is letters-only.
+
 ## What to avoid
 
 - **Boilerplate openers** that could appear identically in a letter to another company.
