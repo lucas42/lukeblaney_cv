@@ -1,0 +1,6 @@
+services:
+  cv:
+    build:
+      context: .
+      target: export-stage
+    image: lucas42/lukeblaney_cv:${VERSION:-dev}

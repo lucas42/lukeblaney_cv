@@ -16,6 +16,22 @@ The build produces:
 * `.pdf` files — for human-to-human distribution (e.g. linking from a website, attaching to email)
 * `.docx` files — for submission to roles via Applicant Tracking Systems (which parse `.docx` far more reliably than `.pdf`)
 
+## Versioning and Docker image
+
+CV artefacts are published as a versioned Docker image (`docker.io/lucas42/lukeblaney_cv:<version>`) on every merge to `main` that touches files outside `cover-letters/`. Commits whose changes (relative to the latest `v*` tag) are entirely inside `cover-letters/` do not produce a new image — those changes don't affect the built artefacts.
+
+The image contains: `cv.pdf`, `cv-extended.pdf`, `cv.docx`, `cv-extended.docx`, `cv.md`, `cv-extended.md`. Consumers use `COPY --from=lucas42/lukeblaney_cv:<version> /cv.pdf /dest/` at Docker build time.
+
+### Semver semantics
+
+| Change type | Bump | Commit message |
+|---|---|---|
+| CV content edit | Patch | (no special prefix needed) |
+| New CV variant added as an additional file | Minor | (no special prefix needed) |
+| CV variant removed or renamed | Major | Include `BREAKING CHANGE` in commit body, or use `feat!:` / `fix!:` prefix |
+
+**Note:** The `lucos_deploy_orb`'s `calc-version` command currently distinguishes only patch vs major (via `BREAKING CHANGE` / `!:` commit syntax). Patch and minor bumps are therefore treated identically in practice — both produce a patch-level version increment. This is safe for the CV's use case because both are backwards-compatible: existing links continue to work, and a new file is simply available for opt-in by future website changes. Minor-bump support in the orb is tracked at [lucas42/lucos_deploy_orb#175](https://github.com/lucas42/lucos_deploy_orb/issues/175).
+
 ## Dependencies
 
 * docker
