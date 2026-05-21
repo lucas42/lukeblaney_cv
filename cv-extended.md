@@ -11,7 +11,9 @@ Website: [lukeblaney.co.uk](https://lukeblaney.co.uk/)
 # Employment
 
 ## Cyber Security Director
+::: {custom-style="EmployerDate"}
 Financial Times: February 2023 - March 2025
+:::
 
 Set strategic direction for cyber security at the FT.
 
@@ -24,7 +26,9 @@ Set strategic direction for cyber security at the FT.
 
 
 ## Interim VP of Cyber Security
+::: {custom-style="EmployerDate"}
 Financial Times: April 2022 - January 2023
+:::
 
 Led the company's cyber security function through a period of
 organisational change.
@@ -38,7 +42,9 @@ organisational change.
 
 
 ## Principal Engineer - Observability, Edge Delivery & Cyber Security
+::: {custom-style="EmployerDate"}
 Financial Times: September 2021 - March 2022
+:::
 
 Working on the strategic direction in three key areas across the
 FT's technology department.
@@ -51,7 +57,9 @@ FT's technology department.
 
 
 ## Principal Engineer - Cyber Security
+::: {custom-style="EmployerDate"}
 Financial Times: September 2020 - September 2021
+:::
 
 Leading the engineering function of the FT's cyber security team.
 
@@ -65,7 +73,9 @@ Leading the engineering function of the FT's cyber security team.
 
 
 ## Principal Engineer - Reliability Engineering
+::: {custom-style="EmployerDate"}
 Financial Times: February 2018 - August 2020
+:::
 
 Running a new team, set up to improve reliability of systems and
 reduce duplication of effort across technology teams at the FT.
@@ -81,7 +91,9 @@ reduce duplication of effort across technology teams at the FT.
 
 
 ## Architect - Content
+::: {custom-style="EmployerDate"}
 Financial Times: October 2016 - February 2018
+:::
 
 Worked on our Universal Publishing Platform, which delivers
 Content & Metadata from a range of editorial tools to our websites,
@@ -104,7 +116,9 @@ empowered to make their own architectural decisions.
 
 
 ## Platform Architect - Operational Intelligence
+::: {custom-style="EmployerDate"}
 Financial Times: December 2015 - October 2016
+:::
 
 Technical lead on a team responsible for observability tools used
 across the department (covering monitoring, metrics & log
@@ -120,7 +134,9 @@ gap between Engineering and Operations teams. My role included:
 
 
 ## Integration Engineer - Strategic Products
+::: {custom-style="EmployerDate"}
 Financial Times: January 2015 - November 2015
+:::
 
 Led the migration of the FT's mobile apps to cloud-based
 infrastructure (primarily AWS) to facilitate the switch-off of
@@ -133,7 +149,9 @@ physical kit in our datacentres. This involved:
 
 
 ## Labs Developer - FT Labs
+::: {custom-style="EmployerDate"}
 Financial Times: December 2011 - December 2014
+:::
 
 In this role, I gained experience with the full stack of web
 development technologies, from using bleeding-edge browser features in
@@ -146,7 +164,9 @@ using tools like Puppet, Varnish and Apache.
 
 
 ## Web Developer
+::: {custom-style="EmployerDate"}
 Assanka: November 2010 - December 2011
+:::
 
 Worked on various web projects for a range of clients, doing both backend and frontend work. Backends included Wordpress, an in-house framework and vanilla PHP. Frontend javascript varied from simple jQuery-based interfaces, to large object-orientated systems which utilised many HTML5 features. Assanka was acquired by the Financial Times at the end of 2011 and was later rebranded "FT Labs".
 
@@ -177,12 +197,16 @@ For a full list of Talks & Panels I've done, see
 # Education
 
 ## BSc (Hons) Computer Science and Physics
+::: {custom-style="EmployerDate"}
 Edinburgh University: 2006 - 2010
+:::
 
 A joint degree, with an emphasis on Computer Science, covering specialist areas such as Distributed Systems, Multi-Agent Semantic Web Systems, Computer Security and Communication & Networking. My Honours project used Semantic Web technologies to provide data for a Semi-Automatic Guesstimation system.
 
 ## A-levels and GCSEs
+::: {custom-style="EmployerDate"}
 Lagan College, Belfast: 1999 - 2006
+:::
 
 - **A-levels**: Maths (A), Irish (A), Physics (B), Chemistry (C)
 - **GCSEs**: Maths (A\*), Science (A\*A\*), Irish (A\*) + 1 A, 4 Bs and 1 C.

@@ -40,6 +40,16 @@
 \titlespacing*{\subsection}{0pt}{16pt}{1.5ex plus .2ex}
 \titlespacing*{\subsubsection}{0pt}{12pt}{1.5ex plus .2ex}
 
+% --- Employer / date subtitle ---
+% A LaTeX environment matching the EmployerDate paragraph style in the
+% docx reference template. Used (via a Lua filter) for the italic
+% employer-and-date subtitle line under each role's H2. The vspace tweaks
+% compensate for the global \parskip so the subtitle tucks visually under
+% the heading rather than feeling like a free-standing paragraph.
+\newenvironment{employerdate}
+  {\par\nopagebreak\itshape\vspace{-6pt}}
+  {\par\nopagebreak\vspace{-6pt}\normalfont}
+
 % --- Brand colour ---
 % Match lukeblaney.co.uk's --primary-color (#306 = #330066) on all heading
 % levels. Body text stays black. Hyperlink colouring is set via pandoc

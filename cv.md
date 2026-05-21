@@ -14,7 +14,9 @@ Senior technology leader with 15 years of experience spanning software engineeri
 
 # Career Break & Current Focus
 
+::: {custom-style="EmployerDate"}
 March 2025 – present
+:::
 
 Took a career break to travel around the world. Now back in London full-time and getting hands-on experience with generative AI tools. Designed and built a multi-persona LLM agent fleet which runs the operational software development lifecycle for a personal software estate — including agents for code review, security review, SRE, architecture, UX and coordination. The work has focused on agentic coding agents and establishing guardrails which balance the value they can deliver against the inherent risks they pose.
 
@@ -35,7 +37,9 @@ Took a career break to travel around the world. Now back in London full-time and
 # Employment
 
 ## Cyber Security Director
+::: {custom-style="EmployerDate"}
 Financial Times: February 2023 - March 2025
+:::
 
 Set strategic direction for cyber security at the FT.
 
@@ -48,7 +52,9 @@ Set strategic direction for cyber security at the FT.
 
 
 ## Interim VP of Cyber Security
+::: {custom-style="EmployerDate"}
 Financial Times: April 2022 - January 2023
+:::
 
 Led the company's cyber security function through a period of
 organisational change.
@@ -61,7 +67,9 @@ organisational change.
 
 
 ## Principal Engineer - Reliability Engineering, Cyber Security, Observability & Edge Delivery
+::: {custom-style="EmployerDate"}
 Financial Times: February 2018 - March 2022
+:::
 
 Ran a selection of engineering teams throughout this period, including building a new one from scratch. Led the company-wide strategic direction in these areas, as well as managing the delivery of initiatives within the relevant teams.
 
@@ -74,7 +82,9 @@ Ran a selection of engineering teams throughout this period, including building 
 
 
 ## Architect - Content
+::: {custom-style="EmployerDate"}
 Financial Times: October 2016 - February 2018
+:::
 
 Worked on our Universal Publishing Platform, which delivers
 Content & Metadata from a range of editorial tools to our websites,
@@ -89,7 +99,9 @@ apps and third-party B2B clients.
 
 
 ## Platform Architect - Operational Intelligence
+::: {custom-style="EmployerDate"}
 Financial Times: December 2015 - October 2016
+:::
 
 Technical lead on a team responsible for observability tools used
 across the department (covering monitoring, metrics & log
@@ -105,7 +117,9 @@ gap between Engineering and Operations teams. My role included:
 
 
 ## Integration Engineer - Strategic Products
+::: {custom-style="EmployerDate"}
 Financial Times: January 2015 - November 2015
+:::
 
 Led the migration of the FT's mobile apps to cloud-based
 infrastructure (primarily AWS) to facilitate the switch-off of
@@ -137,7 +151,9 @@ For a full list of Talks & Panels I've done, see
 # Education
 
 ## BSc (Hons) Computer Science and Physics
+::: {custom-style="EmployerDate"}
 Edinburgh University: 2006 - 2010
+:::
 
 A joint degree, with an emphasis on Computer Science, covering specialist areas such as Distributed Systems, Multi-Agent Semantic Web Systems, Computer Security and Communication & Networking. My Honours project used Semantic Web technologies to provide data for a Semi-Automatic Guesstimation system.
 

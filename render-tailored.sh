@@ -54,15 +54,20 @@ esac
 echo "Building pandoc image (cached after first run)..." >&2
 docker build --target build-stage -q -t cv-pandoc "$CV_DIR" > /dev/null
 
-# Render PDF: brand-purple headings + hyperlinks via pandoc -V vars
+# Render PDF: brand-purple headings + hyperlinks via pandoc -V vars.
+# Lua filter translates EmployerDate custom-style divs to a LaTeX
+# environment (the LaTeX writer otherwise strips the div, leaving the
+# date line as a normal paragraph with the global \parskip).
 echo "Rendering $OUTPUT_BASE.pdf..." >&2
 docker run --rm \
     --user "$(id -u):$(id -g)" \
     -v "$INPUT_DIR:/work" \
+    -v "$CV_DIR/employerdate-filter.lua:/employerdate-filter.lua:ro" \
     -w /work \
     cv-pandoc \
     pandoc "$INPUT_FILE" \
         -H /pandoc-pdf-header.tex.template \
+        --lua-filter=/employerdate-filter.lua \
         -V fontsize=10pt \
         -V colorlinks=true \
         -V urlcolor=brand \
@@ -70,7 +75,10 @@ docker run --rm \
         -o "$OUTPUT_BASE.pdf"
 
 # Render DOCX: uses the reference template whose Title + Heading + Hyperlink
-# styles have been customised to brand purple #330066
+# styles have been customised to brand purple #330066. EmployerDate divs
+# are picked up natively by the docx writer (which applies the named
+# paragraph style from the reference doc) so no Lua filter is needed for
+# the docx render.
 echo "Rendering $OUTPUT_BASE.docx..." >&2
 docker run --rm \
     --user "$(id -u):$(id -g)" \
