@@ -4,7 +4,9 @@ Four short paragraphs. Aim for 250–350 words total. Use the blocks in `blocks/
 
 ## File structure
 
-Cover-letter files in `lukeblaney_cv_tailored/orgs/{company-slug}/` use YAML frontmatter for internal metadata, then plain markdown for the letter body. The YAML is invisible to the rendered submission artefact; only the body below the closing `---` reaches the recipient.
+Cover-letter files in `lukeblaney_cv_tailored/orgs/{company-slug}/{role-slug}/cover-letter.md` use YAML frontmatter for internal metadata, then plain markdown for the letter body. The matching CV sits next to it as `cv.md`. The YAML is invisible to the rendered submission artefact; only the body below the closing `---` reaches the recipient.
+
+The render script (`render-tailored.sh`) detects the `cover-letter.md` filename and outputs `Luke Blaney - Cover Letter.docx` / `.pdf` — submission-ready names with Luke's name on them, ready to upload to an ATS as-is.
 
 ```markdown
 ---
