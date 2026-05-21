@@ -34,6 +34,20 @@ Anchor sentences for paragraph 1. Pick the framing that fits the role archetype;
 
 ---
 
+## Director / Head / VP of Engineering (multi-team, hybrid leadership-and-technical)
+
+### Hybrid leadership + technical authority (when the JD says "not purely strategic")
+> "I'm writing to apply for your [Role] role. The shape of it — leading multiple engineering teams while staying directly involved in architectural decisions on [domain — e.g. 'distributed, event-driven systems'] — is exactly the shape of work I've spent the past several years doing at the Financial Times."
+
+*Stands alone. Use when the JD explicitly says the Director role expects a technical authority who guides architectural decisions, not just strategy. The `[domain]` slot lets the opener anchor on the JD's specific technical signal (event-driven, distributed systems, real-time data, microservices at scale, etc.).*
+
+### Multi-domain leadership breadth (when the JD wants someone who has run several technical functions)
+> "I'm applying for your [Role] role. Across [N] years at the Financial Times, I've led teams across [list 3–4 relevant domains from this list: cyber security, reliability engineering, observability, edge delivery, publishing-platform architecture, identity/SSO, on-prem-to-SaaS migrations] — and held the technical-direction responsibility alongside the leadership work rather than handing it off."
+
+*Use when the JD wants engineering-leadership breadth without specifically wanting platform-team experience. Picking the domains matters — list only the ones relevant to the JD.*
+
+---
+
 ## Architect / Principal Architect / Staff Engineer (IC-track)
 
 ### Deliberate technical re-focus (when stepping out of director-level into IC)
