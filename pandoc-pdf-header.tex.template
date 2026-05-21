@@ -21,24 +21,24 @@
 
 % --- Paragraph spacing ---
 % Paragraphs need a visible gap so cover letters (which are paragraph-
-% after-paragraph with no headings) read clearly. 6pt is a typical
-% business-letter inter-paragraph spacing. To stop CVs growing because
-% of this, the headings below also have their before-spacing reduced by
-% ~6pt so a typical "body paragraph -> heading -> body paragraph" CV
-% rhythm stays roughly the same overall length.
-\setlength{\parskip}{6pt}
+% after-paragraph with no headings) read clearly. 8pt is a slightly-
+% generous business-letter inter-paragraph spacing -- the second-round
+% setting after visual review of the Airbnb cover letter at 6pt.
+\setlength{\parskip}{8pt}
 
 % --- Heading spacing ---
-% Reduce before-spacing on section headings by ~6pt (floor 0pt) to offset
-% the increased \parskip above. Mirrors the equivalent change in the
-% pandoc docx reference template (Heading1 before: 10pt -> 4pt; Heading2/3
-% before: 6pt/4pt -> 0pt). After-spacing on each heading kept at the
-% titlesec defaults so headings still have breathing room before the
-% following paragraph.
+% Subsection (H2 / role titles within Employment) gets more before-spacing
+% than the titlesec defaults call for, because in Luke's CV structure H2
+% headings most commonly follow a bullet list (end of one role's bullets
+% -> next role's H2 title) and that transition was looking too cramped.
+% Section (H1) gets a touch more for the same reason -- section breaks
+% after a bullet list also benefit. Subsubsection (H3) is rarely used
+% but matched in spirit. After-spacing on each heading kept at titlesec
+% defaults so headings breathe before the following paragraph.
 \usepackage{titlesec}
-\titlespacing*{\section}{0pt}{11pt}{2.3ex plus .2ex}
-\titlespacing*{\subsection}{0pt}{10pt}{1.5ex plus .2ex}
-\titlespacing*{\subsubsection}{0pt}{10pt}{1.5ex plus .2ex}
+\titlespacing*{\section}{0pt}{13pt}{2.3ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{16pt}{1.5ex plus .2ex}
+\titlespacing*{\subsubsection}{0pt}{12pt}{1.5ex plus .2ex}
 
 % --- Brand colour ---
 % Match lukeblaney.co.uk's --primary-color (#306 = #330066) on all heading
