@@ -2,40 +2,29 @@ version: 2.1
 orbs:
   lucos: lucos/deploy@0
 
-jobs:
-  release-if-needed:
-    docker:
-      - image: cimg/node:current
-    steps:
-      - checkout
-      - run:
-          name: Skip if only cover-letters/ changed since last release
-          command: |
-            set -euo pipefail
-            LATEST_TAG=$(git tag --list 'v*' --sort=-v:refname | head -1)
-            if [ -z "$LATEST_TAG" ]; then
-              echo "No tags yet — proceeding with first release"
-              exit 0
-            fi
-            CHANGED_OUTSIDE=$(git diff --name-only "${LATEST_TAG}..HEAD" | grep -v '^cover-letters/' || true)
-            if [ -z "$CHANGED_OUTSIDE" ]; then
-              echo "All changes since $LATEST_TAG are in cover-letters/ — skipping release"
-              circleci-agent step halt
-            fi
-            echo "Changes outside cover-letters/ detected — proceeding with release"
-      - lucos/fetch-publish-creds
-      - lucos/generate-github-token
-      - lucos/calc-version
-      - lucos/publish-docker
-      - lucos/push-release-tag
-      - lucos/loganne-publish:
-          tech: "dockerhub"
-
 workflows:
   version: 2
   build-deploy:
     jobs:
-      - release-if-needed:
+      - lucos/release-docker:
+          platform: ""  # data-only image; no cross-compile, no platform manifest claim
+          pre-steps:
+            - checkout
+            - run:
+                name: Skip if only cover-letters/ changed since last release
+                command: |
+                  set -euo pipefail
+                  LATEST_TAG=$(git tag --list 'v*' --sort=-v:refname | head -1)
+                  if [ -z "$LATEST_TAG" ]; then
+                    echo "No tags yet — proceeding with first release"
+                    exit 0
+                  fi
+                  CHANGED_OUTSIDE=$(git diff --name-only "${LATEST_TAG}..HEAD" | grep -v '^cover-letters/' || true)
+                  if [ -z "$CHANGED_OUTSIDE" ]; then
+                    echo "All changes since $LATEST_TAG are in cover-letters/ — skipping release"
+                    circleci-agent step halt
+                  fi
+                  echo "Changes outside cover-letters/ detected — proceeding with release"
           filters:
             branches:
               only:
