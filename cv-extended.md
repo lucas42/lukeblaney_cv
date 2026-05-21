@@ -22,7 +22,7 @@ Set strategic direction for cyber security at the FT.
 - Introduced and oversaw a new process for renewing and refreshing technical policies across the organisation, increasing discoverability of policies and improving adherence.
 - Led security incident management and contributed to a new company-wide crisis management team.
 - Spent 3 months on secondment to the FT's parent company, Nikkei, in Tokyo. Assisted their product security function and strengthened ties between the two companies.
-- Throughout this period, also held the unbackfilled Principal Engineer responsibilities for Cyber Security — providing the technical direction that role usually requires, while delegating day-to-day team management to senior engineers on the team.
+- Throughout this period, also held the unbackfilled Principal Engineer responsibilities for Cyber Security, providing the technical direction that role usually requires while delegating day-to-day team management to senior engineers on the team.
 
 
 ## Interim VP of Cyber Security
@@ -67,7 +67,7 @@ Leading the engineering function of the FT's cyber security team.
 - Rolled out a new company-wide security incident management process and took the lead on managing security incidents.
 - Took responsibility for shaping the team's roadmap and seeing projects through to completion.
 - Contributed to group-wide strategy, ensuring security was well represented.
-- Led the strategy and implementation of democratisation of security data --- enabling engineering teams to make better decisions around their own risks.
+- Led the strategy and implementation of democratisation of security data: enabling engineering teams to make better decisions around their own risks.
 - Advised on security related concerns across all the FT's engineering teams.
 - Took over responsibility for the company-wide migration of Single Sign-On platform, which had been behind schedule and lacking direction. Delivered it on time and on budget.
 
@@ -99,7 +99,7 @@ Worked on our Universal Publishing Platform, which delivers
 Content & Metadata from a range of editorial tools to our websites,
 apps and third-party B2B clients.
 
-- Responsible for architectural decisions across a whole programme of work — 6 development teams across 2 countries, building a platform of 100+ microservices.
+- Responsible for architectural decisions across a whole programme of work: 6 development teams across 2 countries, building a platform of 100+ microservices.
 - Worked on an event-driven architecture using Apache Kafka to move content and metadata across editorial systems, web/app delivery, and B2B clients. Made architectural decisions about event flows and data contracts; configuration and operations were owned by engineers on the platform.
 - Architected the move to Kubernetes for 5 engineering squads in a business-critical area, simplifying operations and reducing technical risk.
 - Pivoted the architect role from a decision bottleneck to a more consultative one, giving engineering squads more autonomy for day-to-day decisions.
@@ -178,7 +178,7 @@ Worked on various web projects for a range of clients, doing both backend and fr
 	Discussed approaches for observability when using microservices at this one-day online conference.
 - **Monitoring All the Things: Keeping Track of a Mixed Estate \| QCon London 2020; Continuous Lifecycle 2020**\
 	Spoke about effectively monitoring the tech estate of a company which uses a variety of different technologies and monitoring approaches.
-- **Panel: Microservices --- Are they still worth it? \| QCon London 2020**\
+- **Panel: Microservices: Are they still worth it? \| QCon London 2020**\
 	Discussed the ongoing value of microservices architecture in a panel at the same event.
 - **Panel: Standardisation and autonomy in our tech choices \| Engine Room, London 2019**\
 	Discussed the value of consistency versus local optimisation in our technical approaches at the FT's internal tech conference.
@@ -214,7 +214,7 @@ Lagan College, Belfast: 1999 - 2006
 # Publications
 
 *A Single-Significant-Digit Calculus for Semi-Automated Guesstimation*
-Jonathan Abourbih, **Luke Blaney**, Alan Bundy and Fiona McNeill — IJCAR 2010
+Jonathan Abourbih, **Luke Blaney**, Alan Bundy and Fiona McNeill, IJCAR 2010
 
 # Earlier Career {#earlier-career .unnumbered}
 - Edinburgh University Students Association, Entertainments Crew - **Lighting Technician**: 2007 - 2010

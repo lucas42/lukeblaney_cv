@@ -10,7 +10,7 @@ Website: [lukeblaney.co.uk](https://lukeblaney.co.uk/)
 
 # Summary
 
-Senior technology leader with 15 years of experience spanning software engineering, architecture and cyber security — most recently as Cyber Security Director at the Financial Times. Comfortable across hands-on technical work, system architecture, and team leadership; particular strengths in mission-critical systems, large-scale technical migrations, and bridging engineering with the rest of the business. Currently exploring next-role options after a planned career break.
+Senior technology leader with 15 years of experience spanning software engineering, architecture and cyber security, most recently as Cyber Security Director at the Financial Times. Comfortable across hands-on technical work, system architecture, and team leadership; particular strengths in mission-critical systems, large-scale technical migrations, and bridging engineering with the rest of the business. Currently exploring next-role options after a planned career break.
 
 # Career Break & Current Focus
 
@@ -18,21 +18,21 @@ Senior technology leader with 15 years of experience spanning software engineeri
 March 2025 – present
 :::
 
-Took a career break to travel around the world. Now back in London full-time and getting hands-on experience with generative AI tools. Designed and built a multi-persona LLM agent fleet which runs the operational software development lifecycle for a personal software estate — including agents for code review, security review, SRE, architecture, UX and coordination. The work has focused on agentic coding agents and establishing guardrails which balance the value they can deliver against the inherent risks they pose.
+Took a career break to travel around the world. Now back in London full-time and getting hands-on experience with generative AI tools. Designed and built a multi-persona LLM agent fleet which runs the operational software development lifecycle for a personal software estate, including agents for code review, security review, SRE, architecture, UX and coordination. The work has focused on agentic coding agents and establishing guardrails which balance the value they can deliver against the inherent risks they pose.
 
 # Skills
 
-**Technical leadership** — Architecture & system design, technical strategy, mentorship, technical documentation & standards, stakeholder management
+**Technical leadership**: Architecture & system design, technical strategy, mentorship, technical documentation & standards, stakeholder management
 
-**Programming & systems** — Python, JavaScript / Node.js, Golang, PHP, Unix/Linux
+**Programming & systems**: Python, JavaScript / Node.js, Golang, PHP, Unix/Linux
 
-**Engineering practice** — Agile, Scrum, TDD, CI/CD, microservices, large-scale technical migrations, mission-critical systems
+**Engineering practice**: Agile, Scrum, TDD, CI/CD, microservices, large-scale technical migrations, mission-critical systems
 
-**Cloud & platform** — AWS, Docker, observability, monitoring, site reliability engineering, incident management
+**Cloud & platform**: AWS, Docker, observability, monitoring, site reliability engineering, incident management
 
-**Cyber security** — Security strategy, security incident response, identity & SSO, application security, risk management
+**Cyber security**: Security strategy, security incident response, identity & SSO, application security, risk management
 
-**Generative AI** — Agentic coding agents, LLM agent orchestration, agent guardrails, MCP (Model Context Protocol)
+**Generative AI**: Agentic coding agents, LLM agent orchestration, agent guardrails, MCP (Model Context Protocol)
 
 # Employment
 
@@ -48,7 +48,7 @@ Set strategic direction for cyber security at the FT.
 - Introduced and oversaw a new process for renewing and refreshing technical policies across the organisation, increasing discoverability of policies and improving adherence.
 - Led security incident management and contributed to a new company-wide crisis management team.
 - Spent 3 months on secondment to the FT's parent company, Nikkei, in Tokyo. Assisted their product security function and strengthened ties between the two companies.
-- Throughout this period, also held the unbackfilled Principal Engineer responsibilities for Cyber Security — providing the technical direction that role usually requires, while delegating day-to-day team management to senior engineers on the team.
+- Throughout this period, also held the unbackfilled Principal Engineer responsibilities for Cyber Security, providing the technical direction that role usually requires while delegating day-to-day team management to senior engineers on the team.
 
 
 ## Interim VP of Cyber Security
@@ -76,7 +76,7 @@ Ran a selection of engineering teams throughout this period, including building 
 - Technical leadership for 3 engineering teams, with line management of 2 in-house teams plus the relationship with a 3rd off-shore team.
 - Successfully led and completed the company-wide migration of several engineering tools from on-premise software to Software-as-a-Service alternatives, including Code Hosting, Issue Tracking and Single Sign-On. Took over the SSO migration when it had been behind schedule and lacking direction, and delivered it on time and on budget.
 - Oversaw the delivery of several core technical tools used extensively across the company, including a monitoring aggregation platform, tech migration tracker and change management system.
-- Led the strategy and implementation of democratisation of security data — enabling engineering teams to make better decisions around their own risks.
+- Led the strategy and implementation of democratisation of security data: enabling engineering teams to make better decisions around their own risks.
 - Rolled out a new company-wide security incident management process and took the lead on managing security incidents.
 - Recruited engineers for vacancies within our teams, with diversity and equity at the forefront of hiring decisions, including actively modifying our recruitment process following feedback from neurodiverse candidates.
 
@@ -90,7 +90,7 @@ Worked on our Universal Publishing Platform, which delivers
 Content & Metadata from a range of editorial tools to our websites,
 apps and third-party B2B clients.
 
-- Responsible for architectural decisions across a whole programme of work — 6 development teams across 2 countries, building a platform of 100+ microservices.
+- Responsible for architectural decisions across a whole programme of work: 6 development teams across 2 countries, building a platform of 100+ microservices.
 - Worked on an event-driven architecture using Apache Kafka to move content and metadata across editorial systems, web/app delivery, and B2B clients. Made architectural decisions about event flows and data contracts; configuration and operations were owned by engineers on the platform.
 - Architected the move to Kubernetes for 5 engineering squads in a business-critical area, simplifying operations and reducing technical risk.
 - Pivoted the architect role from a decision bottleneck to a more consultative one, giving engineering squads more autonomy for day-to-day decisions.
@@ -160,4 +160,4 @@ A joint degree, with an emphasis on Computer Science, covering specialist areas 
 # Publications
 
 *A Single-Significant-Digit Calculus for Semi-Automated Guesstimation*
-Jonathan Abourbih, **Luke Blaney**, Alan Bundy and Fiona McNeill — IJCAR 2010
+Jonathan Abourbih, **Luke Blaney**, Alan Bundy and Fiona McNeill, IJCAR 2010
