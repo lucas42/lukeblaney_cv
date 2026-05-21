@@ -14,7 +14,11 @@ Paragraph-4 building blocks describing what Luke is working on now (post-career-
 
 ### Platform-engineering-flavoured (platform, DevEx, SRE leadership, internal-tools roles)
 
-> Since returning to London, my focus has been on the platform-engineering side of agentic AI coding agents: how do you build the deterministic substrate around a non-deterministic actor? My personal estate runs a multi-persona LLM fleet — coordinator, code reviewer, security, SRE, architecture, UX — and the most interesting work is replacing non-deterministic agent behaviour with shell scripts, convention audits that auto-raise tickets, and version-controlled instruction changes that let agents improve over time without erasing the audit trail.
+> Since returning to London, my focus has been on the platform-engineering side of agentic AI coding agents: how do you build the deterministic structure around a non-deterministic actor? My personal estate runs a multi-persona LLM fleet — coordinator, code reviewer, security, SRE, architecture, UX — and the most interesting work is replacing non-deterministic agent behaviour with shell scripts, convention audits that auto-raise tickets, and version-controlled instruction changes that let agents improve over time without erasing the audit trail.
+
+### IC-architect-flavoured (Staff / Principal / Architect IC roles, especially when the JD wants hands-on architectural decision-making)
+
+> Since returning to London, I've been getting hands-on with agentic AI coding agents — running a multi-persona LLM fleet for my personal software estate (coordinator, code reviewer, security, SRE, architecture, UX) and thinking about what the deterministic structure around a non-deterministic actor needs to look like. A lot of it turns out to be classic architecture problems in a new light: scoping interfaces tightly, designing for observability, version-controlling the instruction surfaces so behaviour-changes have an audit trail.
 
 ### Generalist-leadership-flavoured (EM, TLM, architect, Director / Head of Engineering)
 
@@ -44,6 +48,6 @@ Luke's published writing on this topic — link inline when the application form
 
 - Don't claim **production deployment** or **team-of-engineers using it** — this is personal-estate work.
 - Don't call it **"AI Native"**, **"transformational"**, or use other promotional framings — Luke's voice on this topic is deliberately measured.
-- Don't list **every persona by name** in the cover letter — pick 3–4 most relevant to the JD (e.g. for security roles: security, code-reviewer, coordinator; for platform roles: SRE, architecture, coordinator).
+- **Distinguish the "shape" parenthetical from individual claims**. Inside a single parenthetical describing the team shape (e.g. "modelled on the role structures of a human team (coordinator, code reviewer, security, SRE, architecture, UX)"), listing all six personas reads as one "shape" claim and is fine — the parenthetical is the shape, not six individual claims. **Outside the shape-parenthetical**, don't enumerate personas as separate claims; if you want to highlight specific persona work in its own sentence, pick 1–2 most relevant to the JD (e.g. for security roles: the security and code-reviewer agents; for platform roles: SRE and architecture).
 - Don't oversell. The blog post explicitly frames the work as experimentation and improvement-over-time, not as a finished system. Match that tone.
 - Don't pair this paragraph with a long career-break aside. The current-focus *is* the headline; the career break (if mentioned at all) is one line elsewhere in the paragraph.
