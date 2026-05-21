@@ -26,4 +26,4 @@ RUN pandoc cv.md -H pandoc-pdf-header.tex.template -V fontsize=10pt -V colorlink
 RUN pandoc cv.md --reference-doc=pandoc-docx-reference.docx.template -o cv.docx
 
 FROM scratch AS export-stage
-COPY --from=build-stage *.pdf *.docx /
+COPY --from=build-stage *.pdf *.docx cv*.md /
