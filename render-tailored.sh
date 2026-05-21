@@ -49,6 +49,30 @@ case "$INPUT_FILE" in
         ;;
 esac
 
+# Pre-process: convert ASCII double-spaces between sentences to single space
+# + U+00A0 (non-breaking space). Pandoc's markdown reader collapses
+# consecutive ASCII spaces in text content, so a literal `.  ` (period +
+# two spaces) becomes a single space in the rendered output. U+00A0 isn't
+# treated as whitespace by the parser and survives into the docx/PDF.
+# This lets source files use Luke's preferred typewriter-style double-spacing
+# between sentences (period + 2 ASCII spaces) while preserving it through
+# the rendering pipeline.
+PROCESSED_NAME=".${INPUT_FILE%.md}.processed.md"
+PROCESSED_PATH="$INPUT_DIR/$PROCESSED_NAME"
+trap "rm -f '$PROCESSED_PATH'" EXIT
+python3 - "$ABS_INPUT" "$PROCESSED_PATH" <<'PYEOF'
+import re, sys
+src, dst = sys.argv[1], sys.argv[2]
+with open(src, 'r', encoding='utf-8') as f:
+    content = f.read()
+# Match sentence-ending punctuation followed by 2 or more ASCII spaces.
+# Replace the run of spaces with one ASCII space + U+00A0 — pandoc preserves
+# the nbsp, giving a visual double-space in the rendered output.
+content = re.sub(r'([.!?]) {2,}', '\\1  ', content)
+with open(dst, 'w', encoding='utf-8') as f:
+    f.write(content)
+PYEOF
+
 # Build the pandoc image (target build-stage so we have a shell + tools).
 # The image is cached on subsequent runs; -q suppresses the build chatter.
 echo "Building pandoc image (cached after first run)..." >&2
@@ -65,7 +89,7 @@ docker run --rm \
     -v "$CV_DIR/employerdate-filter.lua:/employerdate-filter.lua:ro" \
     -w /work \
     cv-pandoc \
-    pandoc "$INPUT_FILE" \
+    pandoc "$PROCESSED_NAME" \
         -H /pandoc-pdf-header.tex.template \
         --lua-filter=/employerdate-filter.lua \
         -V fontsize=10pt \
@@ -85,7 +109,7 @@ docker run --rm \
     -v "$INPUT_DIR:/work" \
     -w /work \
     cv-pandoc \
-    pandoc "$INPUT_FILE" \
+    pandoc "$PROCESSED_NAME" \
         --reference-doc=/pandoc-docx-reference.docx.template \
         -o "$OUTPUT_BASE.docx"
 
