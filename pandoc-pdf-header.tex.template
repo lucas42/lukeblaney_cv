@@ -20,9 +20,25 @@
 \usepackage[margin=1.5cm]{geometry}
 
 % --- Paragraph spacing ---
-% Pandoc's default puts substantial vertical space between bullets and
-% paragraphs. Tighten it for CVs without going all the way to flush.
-\setlength{\parskip}{0.3em}
+% Paragraphs need a visible gap so cover letters (which are paragraph-
+% after-paragraph with no headings) read clearly. 6pt is a typical
+% business-letter inter-paragraph spacing. To stop CVs growing because
+% of this, the headings below also have their before-spacing reduced by
+% ~6pt so a typical "body paragraph -> heading -> body paragraph" CV
+% rhythm stays roughly the same overall length.
+\setlength{\parskip}{6pt}
+
+% --- Heading spacing ---
+% Reduce before-spacing on section headings by ~6pt (floor 0pt) to offset
+% the increased \parskip above. Mirrors the equivalent change in the
+% pandoc docx reference template (Heading1 before: 10pt -> 4pt; Heading2/3
+% before: 6pt/4pt -> 0pt). After-spacing on each heading kept at the
+% titlesec defaults so headings still have breathing room before the
+% following paragraph.
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{11pt}{2.3ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{10pt}{1.5ex plus .2ex}
+\titlespacing*{\subsubsection}{0pt}{10pt}{1.5ex plus .2ex}
 
 % --- Brand colour ---
 % Match lukeblaney.co.uk's --primary-color (#306 = #330066) on all heading
@@ -32,7 +48,7 @@
 % them here would fire before hyperref is loaded.
 \usepackage{xcolor}
 \definecolor{brand}{HTML}{330066}
-\usepackage{titlesec}
+% (titlesec loaded above in --- Heading spacing ---)
 \titleformat{\section}{\Large\bfseries\color{brand}}{}{0pt}{}
 \titleformat{\subsection}{\large\bfseries\color{brand}}{}{0pt}{}
 \titleformat{\subsubsection}{\normalsize\bfseries\color{brand}}{}{0pt}{}
