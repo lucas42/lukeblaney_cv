@@ -7,7 +7,7 @@ workflows:
   build-deploy:
     jobs:
       - lucos/release-docker:
-          platform: "linux/amd64"
+          platform: ""  # data-only image; no cross-compile, no platform manifest claim
           pre-steps:
             - checkout
             - run:
