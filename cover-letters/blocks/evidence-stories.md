@@ -129,10 +129,10 @@ Each story has:
 **Tags**: observability, monitoring, SRE, platform engineering, heterogeneous systems, legacy + cloud, stakeholder coordination, adoption-by-pull
 
 **Short**:
-> Leading the Reliability Engineering team at the FT, I owned an observability platform spanning a deliberately mixed estate (Nagios for legacy on-prem, CloudWatch and Graphite/Grafana for newer systems), giving engineers a consistent user experience regardless of which underlying monitoring system was generating the signal.
+> Leading the Reliability Engineering team at the FT, I owned an observability platform spanning a mixed estate (Nagios for legacy on-prem, CloudWatch and Graphite/Grafana for newer systems), giving engineers a consistent user experience regardless of which underlying monitoring system was generating the signal.
 
 **Long**:
-> As Principal Engineer leading Reliability Engineering at the FT, I owned the team responsible for an observability platform built to span a deliberately mixed estate: Nagios for older on-premise systems, CloudWatch and Graphite/Grafana for newer cloud-native services, and a range of third-party tools throughout. Rather than forcing standardisation, the platform was designed to bridge between monitoring systems so engineers got a consistent user experience regardless of where the signal came from. A key design decision was the "System Code" identifier: making the easiest path to register a service the correct path, so platform adoption was pulled by engineering teams rather than pushed by mandate. I presented this work at QCon London 2020 and on InfoQ Live 2020.
+> As Principal Engineer leading Reliability Engineering at the FT, I owned the team responsible for an observability platform built to span a mixed estate: Nagios for older on-premise systems, CloudWatch and Graphite/Grafana for newer cloud-native services, and a range of third-party tools throughout. Rather than forcing standardisation, the platform was designed to bridge between monitoring systems so engineers got a consistent user experience regardless of where the signal came from. A key design decision was the "System Code" identifier: making the easiest path to register a service the correct path, so platform adoption was pulled by engineering teams rather than pushed by mandate. I presented this work at QCon London 2020 and on InfoQ Live 2020.
 
 **Gaps** (medium priority):
 - How many services or system codes registered, roughly?
