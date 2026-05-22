@@ -1,9 +1,12 @@
 #!/bin/bash
-# Render a tailored CV or cover letter markdown file to .pdf + .docx using
-# the lukeblaney_cv pandoc templates. Outputs land alongside the source.
+# Render a tailored CV or cover letter markdown file using the lukeblaney_cv
+# pandoc templates. By default, outputs the .docx (the submission artefact
+# committed alongside the markdown). Pass --pdf to also generate the .pdf —
+# only needed when a specific application or recipient requests a PDF.
 #
 # Usage:
-#   render-tailored.sh <path/to/markdown.md>
+#   render-tailored.sh <path/to/markdown.md>          # docx only (default)
+#   render-tailored.sh --pdf <path/to/markdown.md>    # docx + pdf
 #
 # For files named cv.md or cover-letter.md (the tailored-repo convention,
 # per-role subdirs in lukeblaney_cv_tailored/orgs/{company}/{role}/), the
@@ -11,13 +14,39 @@
 # - Cover Letter.docx") so the .docx can be uploaded to ATS forms as-is.
 # Other filenames produce input-derived output names.
 #
-# Designed to be called from /tailor-cv and /tailor-cover-letter, but also
-# safe to invoke by hand for ad-hoc rebuilds.
+# Designed to be called from /tailor, /tailor-cv and /tailor-cover-letter,
+# but also safe to invoke by hand for ad-hoc rebuilds.
 
 set -euo pipefail
 
+RENDER_PDF=false
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --pdf)
+            RENDER_PDF=true
+            shift
+            ;;
+        -h|--help)
+            echo "Usage: $0 [--pdf] <path/to/markdown.md>" >&2
+            exit 0
+            ;;
+        --)
+            shift
+            break
+            ;;
+        -*)
+            echo "Unknown flag: $1" >&2
+            echo "Usage: $0 [--pdf] <path/to/markdown.md>" >&2
+            exit 1
+            ;;
+        *)
+            break
+            ;;
+    esac
+done
+
 if [[ $# -ne 1 ]]; then
-    echo "Usage: $0 <path/to/markdown.md>" >&2
+    echo "Usage: $0 [--pdf] <path/to/markdown.md>" >&2
     exit 1
 fi
 
@@ -68,7 +97,7 @@ with open(src, 'r', encoding='utf-8') as f:
 # Match sentence-ending punctuation followed by 2 or more ASCII spaces.
 # Replace the run of spaces with one ASCII space + U+00A0 — pandoc preserves
 # the nbsp, giving a visual double-space in the rendered output.
-content = re.sub(r'([.!?]) {2,}', '\\1  ', content)
+content = re.sub(r'([.!?]) {2,}', '\\1  ', content)
 with open(dst, 'w', encoding='utf-8') as f:
     f.write(content)
 PYEOF
@@ -77,26 +106,6 @@ PYEOF
 # The image is cached on subsequent runs; -q suppresses the build chatter.
 echo "Building pandoc image (cached after first run)..." >&2
 docker build --target build-stage -q -t cv-pandoc "$CV_DIR" > /dev/null
-
-# Render PDF: brand-purple headings + hyperlinks via pandoc -V vars.
-# Lua filter translates EmployerDate custom-style divs to a LaTeX
-# environment (the LaTeX writer otherwise strips the div, leaving the
-# date line as a normal paragraph with the global \parskip).
-echo "Rendering $OUTPUT_BASE.pdf..." >&2
-docker run --rm \
-    --user "$(id -u):$(id -g)" \
-    -v "$INPUT_DIR:/work" \
-    -v "$CV_DIR/employerdate-filter.lua:/employerdate-filter.lua:ro" \
-    -w /work \
-    cv-pandoc \
-    pandoc "$PROCESSED_NAME" \
-        -H /pandoc-pdf-header.tex.template \
-        --lua-filter=/employerdate-filter.lua \
-        -V fontsize=10pt \
-        -V colorlinks=true \
-        -V urlcolor=brand \
-        -V linkcolor=brand \
-        -o "$OUTPUT_BASE.pdf"
 
 # Render DOCX: uses the reference template whose Title + Heading + Hyperlink
 # styles have been customised to brand purple #330066. EmployerDate divs
@@ -113,7 +122,34 @@ docker run --rm \
         --reference-doc=/pandoc-docx-reference.docx.template \
         -o "$OUTPUT_BASE.docx"
 
+# Render PDF (opt-in, only when --pdf is passed). Brand-purple headings +
+# hyperlinks via pandoc -V vars. Lua filter translates EmployerDate
+# custom-style divs to a LaTeX environment (the LaTeX writer otherwise
+# strips the div, leaving the date line as a normal paragraph with the
+# global \parskip). The .docx is the canonical submission artefact for
+# every ATS Luke has encountered; the .pdf is only worth generating when a
+# specific application or recipient explicitly asks for a PDF.
+if [[ "$RENDER_PDF" == "true" ]]; then
+    echo "Rendering $OUTPUT_BASE.pdf..." >&2
+    docker run --rm \
+        --user "$(id -u):$(id -g)" \
+        -v "$INPUT_DIR:/work" \
+        -v "$CV_DIR/employerdate-filter.lua:/employerdate-filter.lua:ro" \
+        -w /work \
+        cv-pandoc \
+        pandoc "$PROCESSED_NAME" \
+            -H /pandoc-pdf-header.tex.template \
+            --lua-filter=/employerdate-filter.lua \
+            -V fontsize=10pt \
+            -V colorlinks=true \
+            -V urlcolor=brand \
+            -V linkcolor=brand \
+            -o "$OUTPUT_BASE.pdf"
+fi
+
 echo
 echo "Done. Artefacts at:"
-echo "  $INPUT_DIR/$OUTPUT_BASE.pdf  (gitignored — for human review or hand-share)"
 echo "  $INPUT_DIR/$OUTPUT_BASE.docx (commit alongside markdown — ATS-ready submission name)"
+if [[ "$RENDER_PDF" == "true" ]]; then
+    echo "  $INPUT_DIR/$OUTPUT_BASE.pdf  (gitignored — for human review or hand-share)"
+fi
