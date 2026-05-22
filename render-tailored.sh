@@ -122,6 +122,55 @@ docker run --rm \
         --reference-doc=/pandoc-docx-reference.docx.template \
         -o "$OUTPUT_BASE.docx"
 
+# Post-process: tighten bullet indents in the rendered .docx.
+#
+# Pandoc generates its own numbering.xml entries for bullet lists with
+# left=720 hanging=480 (~0.5 inch text indent), regardless of what's in the
+# reference template. The template's own bullet style (left=480 hanging=480,
+# invisible bullet char) is never used because the template body contains no
+# bullet content for pandoc to inherit from.
+#
+# Result: bullets render with a deep 1/2-inch text indent that looks
+# disproportionate in 2-bullet sections (Talks & Panels, Education, short
+# role entries). Luke flagged this on 2026-05-23.
+#
+# Fix: rewrite the .docx's numbering.xml to set left=360 hanging=360 on
+# every bullet definition — bullet character sits at the page margin, text
+# starts at 1/4 inch. Tightest sensible setting for CV-style short bullets.
+#
+# The .docx is a zip; we open it in-place, modify numbering.xml, and rewrite.
+python3 - "$INPUT_DIR/$OUTPUT_BASE.docx" <<'PYEOF'
+import sys, zipfile, re, shutil, tempfile, os
+docx_path = sys.argv[1]
+with zipfile.ZipFile(docx_path, 'r') as zin:
+    members = zin.namelist()
+    if 'word/numbering.xml' not in members:
+        sys.exit(0)
+    numbering = zin.read('word/numbering.xml').decode('utf-8')
+
+# Rewrite every w:ind on a bullet level to left=360 hanging=360. The pattern
+# matches any <w:ind w:left="..." w:hanging="..."/> inside a numbering entry.
+new_numbering = re.sub(
+    r'<w:ind\s+w:left="\d+"\s+w:hanging="\d+"\s*/>',
+    '<w:ind w:left="360" w:hanging="360"/>',
+    numbering,
+)
+
+if new_numbering == numbering:
+    sys.exit(0)
+
+# Rewrite the zip: copy every entry except numbering.xml, then add the modified one.
+tmp_fd, tmp_path = tempfile.mkstemp(suffix='.docx')
+os.close(tmp_fd)
+with zipfile.ZipFile(docx_path, 'r') as zin, zipfile.ZipFile(tmp_path, 'w', zipfile.ZIP_DEFLATED) as zout:
+    for item in zin.infolist():
+        if item.filename == 'word/numbering.xml':
+            zout.writestr(item, new_numbering.encode('utf-8'))
+        else:
+            zout.writestr(item, zin.read(item.filename))
+shutil.move(tmp_path, docx_path)
+PYEOF
+
 # Render PDF (opt-in, only when --pdf is passed). Brand-purple headings +
 # hyperlinks via pandoc -V vars. Lua filter translates EmployerDate
 # custom-style divs to a LaTeX environment (the LaTeX writer otherwise
