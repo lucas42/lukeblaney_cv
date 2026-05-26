@@ -70,6 +70,8 @@ Leading the engineering function of the FT's cyber security team.
 - Led the strategy and implementation of democratisation of security data: enabling engineering teams to make better decisions around their own risks.
 - Advised on security related concerns across all the FT's engineering teams.
 - Took over responsibility for the company-wide migration of Single Sign-On platform, which had been behind schedule and lacking direction. Delivered it on time and on budget.
+- Rolled out DevSecOps tooling across FT engineering: SAST, SCA and secret-scanning integrated into CI/CD pipelines, with the cyber team setting direction and engineering teams owning configuration.
+- Oversaw the FT's bug bounty programme: managed the vendor relationship and acted as escalation point for tricky triage and payout decisions.
 
 
 ## Principal Engineer - Reliability Engineering
