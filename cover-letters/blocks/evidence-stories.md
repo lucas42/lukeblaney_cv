@@ -162,6 +162,24 @@ Each story has:
 
 ---
 
+## 10. Third-party cyber due-diligence and procurement revamp
+
+**Tags**: cyber security, third-party cyber risk, supplier risk assessment, vendor due diligence (cyber side), GRC, third-party risk management, organisational process change, procurement, risk-rated triage
+
+**Short**:
+> As Cyber Security Director at the Financial Times, I led the cyber security due-diligence workstream of an organisation-wide procurement revamp.  I established a cyber risk triage that auto-approved low-risk suppliers and routed higher-risk ones to the cyber security team for more detailed assessment, balancing cyber risk against the speed of onboarding and the amount of time the team was spending on supplier review.
+
+**Long**:
+> As Cyber Security Director at the Financial Times, I led the cyber security due-diligence workstream of an organisation-wide procurement revamp.  The wider revamp covered several other types of due diligence too (data protection, sanctions, sustainability among them); the cyber side was mine.  I restructured how every third-party engagement was cyber-risk-assessed and onboarded, and established a triage so low-risk suppliers could be signed off automatically while higher-risk ones came to the cyber security team for more detailed assessment.  The balance was deliberate: cyber risk against the speed of onboarding and the amount of time the team was spending on supplier review.  Alongside procurement, legal, and the wider risk function, the workstream gave the business a consistent cyber risk view of its supplier base and a cleaner hand-off between teams that have to live with the consequences of a vendor decision.
+
+**Gaps** (medium priority):
+- A specific outcome metric (time-to-onboard reduced? throughput of suppliers triaged? team-hours saved on routine low-risk reviews?)
+- Roughly how long did the revamp run?
+
+**Where to use**: any role at a vendor whose product is in the third-party-risk / due-diligence / risk-intelligence / supplier-vetting space.  Doubles as a strong "I have been your customer" buyer-side empathy line for that archetype.  The "cyber side specifically, not the whole revamp" framing is the honest scope — don't dress up as having owned the entire procurement programme.
+
+---
+
 ## Backlog: story candidates not yet drafted
 
 Stories worth remembering as JD-triggered material. Draft a full version when a real JD calls for one.
@@ -189,5 +207,6 @@ Match the story to the JD's primary signal:
 | "Stakeholder management beyond engineering" | #1 standards | #7 centralised function |
 | "Observability / monitoring at scale" | #8 mixed-estate monitoring | #4 Reliability Eng |
 | "Incident management / crisis management" | #9 incident management | #7 centralised function |
+| "Third-party / vendor due diligence / supplier vetting" | #10 third-party DD revamp | #7 centralised function |
 
 Avoid stacking three stories in one paragraph; pick one or two, tell them properly.
