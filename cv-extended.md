@@ -20,6 +20,7 @@ Set strategic direction for cyber security at the FT.
 - Defined the vision and set the strategy for IT Risk and Cyber Security.
 - Senior stakeholder management - acting as a bridge between business colleagues and engineers.
 - Introduced and oversaw a new process for renewing and refreshing technical policies across the organisation, increasing discoverability of policies and improving adherence.
+- Led the cyber security due-diligence workstream of an organisation-wide procurement revamp.  Established a cyber risk triage that auto-approved low-risk suppliers and routed higher-risk ones to the cyber team for detailed assessment, balancing cyber risk against onboarding speed and team capacity.
 - Led security incident management and contributed to a new company-wide crisis management team.
 - Spent 3 months on secondment to the FT's parent company, Nikkei, in Tokyo. Assisted their product security function and strengthened ties between the two companies.
 - Throughout this period, also held the unbackfilled Principal Engineer responsibilities for Cyber Security, providing the technical direction that role usually requires while delegating day-to-day team management to senior engineers on the team.
