@@ -39,6 +39,7 @@ organisational change.
 - Line managed a mixed-discipline team of a dozen people, including Engineers, Risk Analysts and IT governance roles.
 - Steered the direction of Security work across the technology department, and the organisation as a whole.
 - Worked with a third party consultancy to build a strategic roadmap and help prioritise security initiatives.
+- Introduced collaborative threat-modelling sessions with engineering teams to surface and prioritise security risks in their systems.
 - Involved in recruitment of a permanent VP of Cyber Security.
 - Continued the Principal Engineer technical-direction responsibilities for Cyber Security throughout this period, as the PE position had not been backfilled when I moved up.
 
@@ -71,7 +72,6 @@ Leading the engineering function of the FT's cyber security team.
 - Contributed to group-wide strategy, ensuring security was well represented.
 - Led the strategy and implementation of democratisation of security data: enabling engineering teams to make better decisions around their own risks.
 - Advised on security related concerns across all the FT's engineering teams.
-- Ran collaborative threat-modelling sessions with engineering teams to surface and prioritise security risks in their systems.
 - Took over responsibility for the company-wide migration of Single Sign-On platform, which had been behind schedule and lacking direction. Delivered it on time and on budget.
 - Rolled out DevSecOps tooling across FT engineering: SAST, SCA and secret-scanning integrated into CI/CD pipelines, with the cyber team setting direction and engineering teams owning configuration.
 - Oversaw the FT's bug bounty programme: managed the vendor relationship and acted as escalation point for tricky triage and payout decisions.
