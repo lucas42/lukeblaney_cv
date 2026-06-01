@@ -22,6 +22,7 @@ Set strategic direction for cyber security at the FT.
 - Introduced and oversaw a new process for renewing and refreshing technical policies across the organisation, increasing discoverability of policies and improving adherence.
 - Led the cyber security due-diligence workstream of an organisation-wide procurement revamp.  Established a cyber risk triage that auto-approved low-risk suppliers and routed higher-risk ones to the cyber team for detailed assessment, balancing cyber risk against onboarding speed and team capacity.
 - Led security incident management and contributed to a new company-wide crisis management team.
+- Partnered closely with the FT's compliance function across security incidents, procurement due-diligence, AI governance and ad-hoc risk assessments.
 - Spent 3 months on secondment to the FT's parent company, Nikkei, in Tokyo. Assisted their product security function and strengthened ties between the two companies.
 - Throughout this period, also held the unbackfilled Principal Engineer responsibilities for Cyber Security, providing the technical direction that role usually requires while delegating day-to-day team management to senior engineers on the team.
 
@@ -70,6 +71,7 @@ Leading the engineering function of the FT's cyber security team.
 - Contributed to group-wide strategy, ensuring security was well represented.
 - Led the strategy and implementation of democratisation of security data: enabling engineering teams to make better decisions around their own risks.
 - Advised on security related concerns across all the FT's engineering teams.
+- Ran collaborative threat-modelling sessions with engineering teams to surface and prioritise security risks in their systems.
 - Took over responsibility for the company-wide migration of Single Sign-On platform, which had been behind schedule and lacking direction. Delivered it on time and on budget.
 - Rolled out DevSecOps tooling across FT engineering: SAST, SCA and secret-scanning integrated into CI/CD pipelines, with the cyber team setting direction and engineering teams owning configuration.
 - Oversaw the FT's bug bounty programme: managed the vendor relationship and acted as escalation point for tricky triage and payout decisions.
