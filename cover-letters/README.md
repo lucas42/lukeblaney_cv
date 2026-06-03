@@ -28,7 +28,7 @@ For any new application:
 6. Add a career-break aside from `blocks/career-break-aside.md` (or skip it).
 7. Close with a line + sign-off from `blocks/closes.md`.
 
-Once `/tailor-cover-letter` is built (see project memory in `~/.claude/agent-memory/career-advisor/project_cover_letter_rebuild.md`), this whole flow will be skill-driven.
+This flow is skill-driven via the `/tailor` skill, which pulls these blocks, runs the JD-specific consultation, and drafts the letter for sign-off.
 
 ## Where the actual letters go
 

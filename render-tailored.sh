@@ -14,7 +14,7 @@
 # - Cover Letter.docx") so the .docx can be uploaded to ATS forms as-is.
 # Other filenames produce input-derived output names.
 #
-# Designed to be called from /tailor, /tailor-cv and /tailor-cover-letter,
+# Designed to be called from the /tailor skill,
 # but also safe to invoke by hand for ad-hoc rebuilds.
 
 set -euo pipefail
