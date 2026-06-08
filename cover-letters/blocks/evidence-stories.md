@@ -180,6 +180,26 @@ Each story has:
 
 ---
 
+## 11. Security as a platform / enablement function
+
+**Tags**: secure-by-design, shift-left, DevSecOps, security enablement, paved-path / golden-path, platform security, developer experience, security-as-a-service, security adoption by pull
+
+**Short**:
+> Leading the engineering side of the FT's cyber security team, I ran security as an enablement function with engineers as the customers: rolling out SAST, SCA and secret-scanning into engineering's CI/CD pipelines (cyber setting direction, teams owning configuration), and leading the democratisation of security data so teams could make better-informed decisions about their own risks.
+
+**Long**:
+> Leading the engineering side of the FT's cyber security team, I deliberately ran security as a platform/enablement function rather than a gate, with engineering teams as the customers. I rolled out DevSecOps tooling (SAST, SCA and secret-scanning) into engineering's CI/CD pipelines, with the cyber team setting direction and the teams owning configuration, so the secure path was also the path of least friction. Alongside that I led the strategy and implementation of democratising security data, giving teams the visibility to make better-informed decisions about their own risks, and acted as the security advisor across every engineering team in the company. The result was security adoption pulled by engineering rather than pushed by mandate.
+
+**Gaps** (medium priority):
+- Any coverage / adoption figure (roughly what proportion of pipelines had scanning, how many teams onboarded)?
+- Any downstream result: reduction in findings, faster remediation, fewer security escalations reaching the central team?
+
+**Where to use**: the growing class of secure-by-design / shift-left / "Golden Path" / platform-security-leadership roles where the deliverable is engineered controls that *reduce friction for development teams* and security adoption is driven by enablement rather than enforcement. The honest scope: cyber team set direction, engineering teams owned configuration — don't frame it as the cyber team operating every pipeline.
+
+**Pairs with**: [Story 7: Centralised cyber security function](#7-centralised-cyber-security-function-interim-vp) (the org structure around it); [Story 1: Technical standards rationalisation](#1-technical-standards-rationalisation) (the governance counterpart).
+
+---
+
 ## Backlog: story candidates not yet drafted
 
 Stories worth remembering as JD-triggered material. Draft a full version when a real JD calls for one.
@@ -208,5 +228,6 @@ Match the story to the JD's primary signal:
 | "Observability / monitoring at scale" | #8 mixed-estate monitoring | #4 Reliability Eng |
 | "Incident management / crisis management" | #9 incident management | #7 centralised function |
 | "Third-party / vendor due diligence / supplier vetting" | #10 third-party DD revamp | #7 centralised function |
+| "Secure-by-design / shift-left / platform security / reduce friction for dev teams" | #11 security-as-enablement | #1 standards |
 
 Avoid stacking three stories in one paragraph; pick one or two, tell them properly.
