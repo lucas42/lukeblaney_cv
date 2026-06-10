@@ -25,5 +25,9 @@ RUN pandoc cv-extended.md --reference-doc=pandoc-docx-reference.docx.template -o
 RUN pandoc cv.md -H pandoc-pdf-header.tex.template -V fontsize=10pt -V colorlinks=true -V urlcolor=brand -V linkcolor=brand -o cv.pdf
 RUN pandoc cv.md --reference-doc=pandoc-docx-reference.docx.template -o cv.docx
 
+# export-stage is data-only (FROM scratch + COPY) with no architecture-specific content.
+# CI uses platform: "" (lucos/release-docker) which — since lucos/deploy@0 ≥ 0.1.x —
+# disables buildx attestations and emits a plain application/vnd.docker.distribution.manifest.v2+json
+# with no platform claim, consumable from any arch via COPY --from. See lucos_deploy_orb#186.
 FROM scratch AS export-stage
 COPY --from=build-stage *.pdf *.docx cv*.md /
