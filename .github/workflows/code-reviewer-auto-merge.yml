@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   reusable:
-    uses: lucas42/.github/.github/workflows/reusable-code-reviewer-auto-merge.yml@04240a3a04d8d3426e5f2905431184512eb854fc # v1.23.0
+    uses: lucas42/.github/.github/workflows/reusable-code-reviewer-auto-merge.yml@da449262a0a256698a8e3c003fb673c012b301a3 # v1.24.0
     secrets:
       LUCOS_CI_APP_ID: ${{ secrets.LUCOS_CI_APP_ID }}
       LUCOS_CI_PRIVATE_KEY: ${{ secrets.LUCOS_CI_PRIVATE_KEY }}
